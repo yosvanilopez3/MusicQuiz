@@ -10,11 +10,14 @@ import UIKit
 import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate{
     var musicPlayer: AVAudioPlayer!
-    //var currentSong: Song!
+    var currentSong: Song!
+    @IBOutlet weak var songProgress: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
-            //currentSong = getRandomSong()
+            currentSong = getRandomSong()
+            let resourceString = currentSong.path
             let resourcePath = Bundle.main.path(forResource: resourceString, ofType: "mp3")!
             let url = URL(fileURLWithPath: resourcePath)
             try musicPlayer = AVAudioPlayer(contentsOf: url)
@@ -24,9 +27,16 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         // minimize lag between click and play time
         musicPlayer.delegate = self
         musicPlayer.prepareToPlay()
-        musicPlayer.numberOfLoops = 1
+        musicPlayer.numberOfLoops = 0
         musicPlayer.play()
+        
     }
+    
+    @IBAction func doneBtn(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         performSegue(withIdentifier: "goToQuiz", sender: nil)
@@ -35,27 +45,28 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToQuiz" {
             if let destination = segue.destination as? QuizVC{
-                //destination.song = currentSong
+                destination.song = currentSong
             }
         }
     }
+    
     func getRandomSong() -> Song {
        var songs = [Song]()
        let songPaths = ["Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1", "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2", "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3", "Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150", "Carlo_Gesualdo&Moro_lasso&1611",
-           "Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto", 
+           "Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto", "Fur_Alina&Arvo_Part&1976", "George_Friedrich_Handel&Messiah&1742&Overture", "Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1"]
         for song in songPaths {
             let songInfo = parseSongPath(path: song)
-            if songInfo.count = 4 {
-                songs.append(Song(path: song, name: songInfo[0], composer: songInfo[1], year: songInfo[2], extra: songInfo[3]))
+            if songInfo.count == 4 {
+                songs.append(Song(path: song, composer: songInfo[0], name: songInfo[1], year: songInfo[2], extra: songInfo[3]))
             }
-      }
-        return songs[Int(arc4random_uniform(4))]
+        }
+        return songs[Int(arc4random_uniform(UInt32(songs.count)))]
     }
         
     func parseSongPath(path:String) -> [String] {
         let pathWithSpaces = path.replacingOccurrences(of: "_", with: " ")
         var info = pathWithSpaces.components(separatedBy: "&")
-        if info.count < 5 {
+        if info.count < 4 {
            info.append("None")
         }
         return info

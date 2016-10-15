@@ -27,6 +27,8 @@
 		281CB5521DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB54B1DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 */; };
 		281CB5541DB1A5EA00593545 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5531DB1A5EA00593545 /* QuizVC.swift */; };
 		281CB5571DB1BD8800593545 /* Songs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5561DB1BD8800593545 /* Songs.xcassets */; };
+		281CB5591DB1FDFA00593545 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5581DB1FDFA00593545 /* RoundedButton.swift */; };
+		281CB55B1DB207DB00593545 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB55A1DB207DB00593545 /* ResultsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		281CB54B1DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Carlo_Gesualdo&Moro_lasso&1611.mp3"; path = "../../../../Downloads/Carlo_Gesualdo&Moro_lasso&1611.mp3"; sourceTree = "<group>"; };
 		281CB5531DB1A5EA00593545 /* QuizVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
 		281CB5561DB1BD8800593545 /* Songs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Songs.xcassets; sourceTree = "<group>"; };
+		281CB5581DB1FDFA00593545 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		281CB55A1DB207DB00593545 /* ResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,12 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				281CB50D1DB194E300593545 /* AppDelegate.swift */,
-				281CB50F1DB194E300593545 /* ViewController.swift */,
-				281CB5531DB1A5EA00593545 /* QuizVC.swift */,
+				281CB55C1DB2125500593545 /* Controller */,
 				281CB5111DB194E300593545 /* Main.storyboard */,
-				281CB5561DB1BD8800593545 /* Songs.xcassets */,
+				281CB5581DB1FDFA00593545 /* RoundedButton.swift */,
 				281CB5411DB1971600593545 /* Song.swift */,
 				281CB5171DB194E300593545 /* Assets.xcassets */,
+				281CB5561DB1BD8800593545 /* Songs.xcassets */,
 				281CB5191DB194E300593545 /* LaunchScreen.storyboard */,
 				281CB51C1DB194E300593545 /* Info.plist */,
 				281CB5141DB194E300593545 /* MusicQuiz.xcdatamodeld */,
@@ -171,6 +175,16 @@
 			);
 			name = Songs;
 			path = MusicQuiz;
+			sourceTree = "<group>";
+		};
+		281CB55C1DB2125500593545 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				281CB5531DB1A5EA00593545 /* QuizVC.swift */,
+				281CB55A1DB207DB00593545 /* ResultsVC.swift */,
+				281CB50F1DB194E300593545 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +334,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281CB55B1DB207DB00593545 /* ResultsVC.swift in Sources */,
 				281CB5421DB1971600593545 /* Song.swift in Sources */,
+				281CB5591DB1FDFA00593545 /* RoundedButton.swift in Sources */,
 				281CB5541DB1A5EA00593545 /* QuizVC.swift in Sources */,
 				281CB5101DB194E300593545 /* ViewController.swift in Sources */,
 				281CB50E1DB194E300593545 /* AppDelegate.swift in Sources */,

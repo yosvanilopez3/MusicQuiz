@@ -15,7 +15,6 @@ class Song {
     private var _year: String!
     private var _movement_or_act: String!
     
-    
     var path: String {
         return _path
     }
@@ -31,10 +30,10 @@ class Song {
     }
     
     var movement_or_act: String {
-        return movement_or_act
+        return _movement_or_act
     }
     
-    init(path: String, name:String, composer: String, year: String, extra: String = "none") {
+    init(path: String, composer: String, name:String, year: String, extra: String = "none") {
         self._path = path
         self._name = name
         self._composer = composer
