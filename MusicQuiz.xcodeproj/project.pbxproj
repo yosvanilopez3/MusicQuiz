@@ -15,7 +15,7 @@
 		281CB51B1DB194E300593545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5191DB194E300593545 /* LaunchScreen.storyboard */; };
 		281CB5261DB194E300593545 /* MusicQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5251DB194E300593545 /* MusicQuizTests.swift */; };
 		281CB5311DB194E300593545 /* MusicQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5301DB194E300593545 /* MusicQuizUITests.swift */; };
-		281CB5401DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB53F1DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 */; };
+		281CB5401DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB53F1DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 */; };
 		281CB5421DB1971600593545 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5411DB1971600593545 /* Song.swift */; };
 		281CB5441DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */; };
 		281CB54C1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */; };
@@ -63,7 +63,7 @@
 		281CB52C1DB194E300593545 /* MusicQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281CB5301DB194E300593545 /* MusicQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicQuizUITests.swift; sourceTree = "<group>"; };
 		281CB5321DB194E300593545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		281CB53F1DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Fur_Alina&Arvo_Part&1976.mp3"; path = "../../../../Downloads/Fur_Alina&Arvo_Part&1976.mp3"; sourceTree = "<group>"; };
+		281CB53F1DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Arvo_Part&Fur_Alina&1976.mp3"; path = "../../../../Downloads/Arvo_Part&Fur_Alina&1976.mp3"; sourceTree = "<group>"; };
 		281CB5411DB1971600593545 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3"; path = "../../../../Downloads/Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3"; sourceTree = "<group>"; };
 		281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3"; path = "../../../../Downloads/Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				281CB50D1DB194E300593545 /* AppDelegate.swift */,
-				281CB5411DB1971600593545 /* Song.swift */,
+				281CB55E1DB225D700593545 /* Modal */,
 				281CB55C1DB2125500593545 /* Controller */,
 				281CB55D1DB21BE100593545 /* View */,
 				281CB5171DB194E300593545 /* Assets.xcassets */,
@@ -162,7 +162,7 @@
 		281CB53E1DB196DC00593545 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				281CB53F1DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 */,
+				281CB53F1DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 */,
 				281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */,
 				281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */,
 				281CB5461DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 */,
@@ -193,6 +193,14 @@
 				281CB5581DB1FDFA00593545 /* RoundedButton.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		281CB55E1DB225D700593545 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				281CB5411DB1971600593545 /* Song.swift */,
+			);
+			name = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +320,7 @@
 				281CB54D1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 in Resources */,
 				281CB5181DB194E300593545 /* Assets.xcassets in Resources */,
 				281CB5511DB1993100593545 /* Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto.mp3 in Resources */,
-				281CB5401DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 in Resources */,
+				281CB5401DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 in Resources */,
 				281CB5131DB194E300593545 /* Main.storyboard in Resources */,
 				281CB5501DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 in Resources */,
 				281CB54C1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 in Resources */,
@@ -597,6 +605,7 @@
 				281CB5371DB194E300593545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		281CB5381DB194E300593545 /* Build configuration list for PBXNativeTarget "MusicQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +614,7 @@
 				281CB53A1DB194E300593545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		281CB53B1DB194E300593545 /* Build configuration list for PBXNativeTarget "MusicQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +623,7 @@
 				281CB53D1DB194E300593545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

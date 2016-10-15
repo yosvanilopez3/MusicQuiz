@@ -28,21 +28,46 @@
                                     <segue destination="OqC-Ee-VtQ" kind="show" id="RqM-zC-KC6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-Iq-rJh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="V1v-Um-iiO"/>
+                                    <constraint firstAttribute="width" constant="20" id="cee-Zz-372"/>
+                                </constraints>
+                                <state key="normal" image="Settings Filled-50"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hbj-Iq-rJh" secondAttribute="trailing" constant="15" id="IFc-0x-94y"/>
+                            <constraint firstItem="hbj-Iq-rJh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="N3a-dT-XsN"/>
                             <constraint firstItem="rrE-nz-8F7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OyR-Fg-rKO"/>
                             <constraint firstItem="rrE-nz-8F7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jt7-7b-XMv"/>
                         </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem systemItem="pageCurl" id="3yQ-CJ-cYJ"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-519.20000000000005" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GnJ-Cz-aYj">
+            <objects>
+                <viewController id="Tob-j6-G90" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cce-4z-FxM"/>
+                        <viewControllerLayoutGuide type="bottom" id="FA2-Rj-R0u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nSq-wZ-txI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQ8-2H-ZyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406" y="709"/>
         </scene>
         <!--QuizVC-->
         <scene sceneID="jiC-sy-Mqy">
@@ -200,7 +225,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-cX-rbu">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-cX-rbu">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-Ix-ZZb">
                                         <subviews>
@@ -221,7 +246,6 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HCS-tg-9SF">
-                                                                        <color key="backgroundColor" red="0.094931110072880243" green="1" blue="0.079133967196059474" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="20" id="XhK-Wi-elx"/>
                                                                             <constraint firstAttribute="height" constant="20" id="nDU-F1-kIa"/>
@@ -255,7 +279,6 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uYv-oD-6bb">
-                                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.19772736052779027" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="X0e-vs-sJA"/>
                                                                             <constraint firstAttribute="width" constant="20" id="d6a-5a-ktL"/>
@@ -289,7 +312,6 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oac-R1-8kz">
-                                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.1977273605" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="20" id="aJI-J8-Gjy"/>
                                                                             <constraint firstAttribute="height" constant="20" id="bKZ-X9-q19"/>
@@ -323,7 +345,6 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eef-9q-lgg">
-                                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.1977273605" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="20" id="gAM-cT-Ht8"/>
                                                                             <constraint firstAttribute="height" constant="20" id="j4F-VK-TXJ"/>
@@ -372,7 +393,7 @@
                                             <constraint firstItem="4LT-KU-bgL" firstAttribute="leading" secondItem="JWe-Ix-ZZb" secondAttribute="leading" constant="20" id="PD2-hC-mpJ"/>
                                             <constraint firstItem="m3u-s3-myw" firstAttribute="leading" secondItem="JWe-Ix-ZZb" secondAttribute="leading" constant="20" id="Pau-o0-G7J"/>
                                             <constraint firstItem="9YO-eC-Y0A" firstAttribute="top" secondItem="m3u-s3-myw" secondAttribute="bottom" constant="30" id="WeZ-WE-ueg"/>
-                                            <constraint firstItem="4LT-KU-bgL" firstAttribute="top" secondItem="9YO-eC-Y0A" secondAttribute="bottom" constant="40" id="ZkS-Oo-uOz"/>
+                                            <constraint firstItem="4LT-KU-bgL" firstAttribute="top" secondItem="9YO-eC-Y0A" secondAttribute="bottom" constant="80" id="ZkS-Oo-uOz"/>
                                             <constraint firstItem="9YO-eC-Y0A" firstAttribute="leading" secondItem="JWe-Ix-ZZb" secondAttribute="leading" constant="20" id="ebB-ST-cjb"/>
                                             <constraint firstAttribute="height" constant="800" id="nCV-4n-erK"/>
                                             <constraint firstItem="m3u-s3-myw" firstAttribute="top" secondItem="JWe-Ix-ZZb" secondAttribute="top" constant="20" id="wzH-t7-eLp"/>
@@ -486,4 +507,7 @@
             <point key="canvasLocation" x="197.59999999999999" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Settings Filled-50" width="50" height="50"/>
+    </resources>
 </document>

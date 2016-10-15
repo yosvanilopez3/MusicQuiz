@@ -63,28 +63,28 @@ class ResultsVC: UIViewController {
     
     func checkAnswers() {
         if songInput.lowercased() == song.name.lowercased() {
-            songIndicator.layer.backgroundColor = UIColor(red: 0, green: 128, blue: 0, alpha: 1).cgColor
+            songIndicator.image = UIImage(named: "right")
         } else {
-            songIndicator.layer.backgroundColor = UIColor(red: 128, green: 0, blue: 0, alpha: 1).cgColor
+            songIndicator.image = UIImage(named: "wrong")
         }
         if composerInput.lowercased() == song.composer.lowercased() {
-            composerIndicator.layer.backgroundColor = UIColor(red: 0, green: 128, blue: 0, alpha: 1).cgColor
+            composerIndicator.image = UIImage(named: "right")
         } else {
-            composerIndicator.layer.backgroundColor = UIColor(red: 128, green: 0, blue: 0, alpha: 1).cgColor
+            composerIndicator.image = UIImage(named: "wrong")
         }
         if yearInput.lowercased() == song.year.lowercased() {
-            yearIndicator.layer.backgroundColor = UIColor(red: 0, green: 128, blue: 0, alpha: 1).cgColor
+            yearIndicator.image = UIImage(named: "right")
         } else {
-            yearIndicator.layer.backgroundColor = UIColor(red: 128, green: 0, blue: 0, alpha: 1).cgColor
-        }
-        if movementInput.lowercased() == song.movement_or_act.lowercased()  || song.movement_or_act == "none" {
-            movementIndicator.layer.backgroundColor = UIColor(red: 0, green: 128, blue: 0, alpha: 1).cgColor
+          yearIndicator.image = UIImage(named: "wrong")
+       }
+        if movementInput.lowercased() == song.movement_or_act.lowercased() {
+            movementIndicator.image = UIImage(named: "wrong")
         }
         else if song.movement_or_act.lowercased() == "none" {
-            movementIndicator.layer.backgroundColor = UIColor(red: 128, green: 0, blue: 0, alpha: 0).cgColor
+            movementIndicator.image = UIImage()
         }
         else{
-            movementIndicator.layer.backgroundColor = UIColor(red: 128, green: 0, blue: 0, alpha: 1).cgColor
+            movementIndicator.image = UIImage(named: "right")
         }
 
     }
