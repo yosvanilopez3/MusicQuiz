@@ -81,19 +81,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gD3-0b-WmV">
-                                <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7lr-LO-Zw8"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem systemItem="done" id="xyq-Ju-vW6">
-                                        <connections>
-                                            <action selector="doneBtn:" destination="Jti-ch-aC8" id="MlD-LM-jFC"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzB-O6-w3P" customClass="RoundedButton" customModule="MusicQuiz" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.2528211922137461" green="0.51688941102911079" blue="0.62371787728282824" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -185,22 +172,47 @@
                                     <constraint firstAttribute="trailing" secondItem="GJC-oQ-8dw" secondAttribute="trailing" id="tSe-GM-t9C"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vx-zo-V1M">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub5-3V-oTV">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="CvR-3x-FaL"/>
+                                            <constraint firstAttribute="height" constant="20" id="jpk-fK-g8j"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Dog House Filled-50"/>
+                                        <connections>
+                                            <action selector="homeBtn:" destination="Jti-ch-aC8" eventType="touchUpInside" id="DMp-JM-16g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4iW-f9-X9z"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Eud-3I-UkE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ub5-3V-oTV" secondAttribute="bottom" constant="8" id="Hpq-rF-LoF"/>
+                                    <constraint firstItem="Ub5-3V-oTV" firstAttribute="leading" secondItem="3vx-zo-V1M" secondAttribute="leading" constant="15" id="mgu-P1-BF3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="RPd-bb-LR6" firstAttribute="top" secondItem="gD3-0b-WmV" secondAttribute="bottom" constant="20" id="4LD-Tw-rGe"/>
-                            <constraint firstAttribute="trailing" secondItem="gD3-0b-WmV" secondAttribute="trailing" id="BFf-aV-H7L"/>
+                            <constraint firstItem="3vx-zo-V1M" firstAttribute="leading" secondItem="UsE-0B-q5F" secondAttribute="leading" id="29m-Pi-42M"/>
+                            <constraint firstItem="RPd-bb-LR6" firstAttribute="top" secondItem="3vx-zo-V1M" secondAttribute="bottom" constant="15" id="5cZ-cz-LjJ"/>
+                            <constraint firstItem="3vx-zo-V1M" firstAttribute="top" secondItem="UsE-0B-q5F" secondAttribute="top" id="A6K-O4-JW9"/>
                             <constraint firstItem="RPd-bb-LR6" firstAttribute="leading" secondItem="UsE-0B-q5F" secondAttribute="leading" constant="40" id="CGl-jH-2hK"/>
                             <constraint firstItem="yzB-O6-w3P" firstAttribute="top" secondItem="Rw6-Qi-3bd" secondAttribute="bottom" constant="90" id="DLe-gp-Qz9"/>
                             <constraint firstItem="Rw6-Qi-3bd" firstAttribute="top" secondItem="RPd-bb-LR6" secondAttribute="bottom" constant="75" id="IuG-pR-ybM"/>
                             <constraint firstAttribute="trailing" secondItem="RPd-bb-LR6" secondAttribute="trailing" constant="40" id="Shl-BB-8Do"/>
                             <constraint firstAttribute="trailing" secondItem="yzB-O6-w3P" secondAttribute="trailing" constant="20" id="cWd-jd-5nF"/>
-                            <constraint firstItem="gD3-0b-WmV" firstAttribute="top" secondItem="UsE-0B-q5F" secondAttribute="top" id="h4G-lS-Diz"/>
+                            <constraint firstAttribute="trailing" secondItem="3vx-zo-V1M" secondAttribute="trailing" id="emL-Ga-WvP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rw6-Qi-3bd" secondAttribute="trailing" constant="20" id="wQK-Se-E4Z"/>
-                            <constraint firstItem="gD3-0b-WmV" firstAttribute="leading" secondItem="UsE-0B-q5F" secondAttribute="leading" id="wXD-aV-e7X"/>
                             <constraint firstItem="yzB-O6-w3P" firstAttribute="leading" secondItem="UsE-0B-q5F" secondAttribute="leading" constant="20" id="yCd-ak-viZ"/>
                             <constraint firstItem="Rw6-Qi-3bd" firstAttribute="leading" secondItem="UsE-0B-q5F" secondAttribute="leadingMargin" constant="20" id="yrt-NL-jwI"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="PTx-p2-c3t" appends="YES" id="s6I-k3-kTf"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="composerInput" destination="vl4-bm-w2P" id="5an-ts-H0u"/>
@@ -210,6 +222,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsy-9L-oMc" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PTx-p2-c3t">
+                    <connections>
+                        <action selector="tapOutsideBox:" destination="Jti-ch-aC8" id="zn0-ai-H9D"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="909.60000000000002" y="26.53673163418291"/>
         </scene>
@@ -225,7 +242,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-cX-rbu">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-cX-rbu">
+                                <frame key="frameInset" minY="124" width="375" height="499"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-Ix-ZZb">
                                         <subviews>
@@ -409,28 +427,37 @@
                                     <constraint firstAttribute="bottom" secondItem="JWe-Ix-ZZb" secondAttribute="bottom" constant="200" id="sLz-NC-YcT"/>
                                 </constraints>
                             </scrollView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPp-kK-gBu">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOj-VB-u1g">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1h-SC-2h4">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="A1U-EL-bnx"/>
+                                            <constraint firstAttribute="height" constant="20" id="ccZ-8C-jvH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Dog House Filled-50"/>
+                                        <connections>
+                                            <action selector="homeBtn:" destination="Zvi-xV-qPI" eventType="touchUpInside" id="ql0-Aq-Ddd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="VGl-AI-p7n"/>
+                                    <constraint firstItem="C1h-SC-2h4" firstAttribute="leading" secondItem="pOj-VB-u1g" secondAttribute="leading" constant="15" id="0VL-fE-72E"/>
+                                    <constraint firstAttribute="height" constant="60" id="484-ER-Dxq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="6E5-Nc-6lg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="H8J-Vs-jyt"/>
+                                    <constraint firstAttribute="bottom" secondItem="C1h-SC-2h4" secondAttribute="bottom" constant="8" id="Uvg-Ks-9Qn"/>
                                 </constraints>
-                                <items>
-                                    <barButtonItem systemItem="done" id="miy-Vp-ywz">
-                                        <connections>
-                                            <action selector="doneBtn:" destination="Zvi-xV-qPI" id="NAJ-St-FbQ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EWa-cX-rbu" firstAttribute="leading" secondItem="yud-Xv-loN" secondAttribute="leading" id="1fU-4w-4VP"/>
-                            <constraint firstItem="EWa-cX-rbu" firstAttribute="top" secondItem="LPp-kK-gBu" secondAttribute="bottom" id="3Rd-eB-KLc"/>
-                            <constraint firstAttribute="trailing" secondItem="LPp-kK-gBu" secondAttribute="trailing" id="JaB-hd-xpP"/>
-                            <constraint firstItem="LPp-kK-gBu" firstAttribute="leading" secondItem="yud-Xv-loN" secondAttribute="leading" id="TQR-b2-36c"/>
-                            <constraint firstItem="LPp-kK-gBu" firstAttribute="top" secondItem="yud-Xv-loN" secondAttribute="top" id="a4b-mc-eZf"/>
+                            <constraint firstItem="EWa-cX-rbu" firstAttribute="top" secondItem="pOj-VB-u1g" secondAttribute="bottom" id="JmF-N1-3oT"/>
+                            <constraint firstItem="pOj-VB-u1g" firstAttribute="top" secondItem="yud-Xv-loN" secondAttribute="top" id="hny-cH-2kM"/>
                             <constraint firstItem="eBM-GB-87m" firstAttribute="top" secondItem="EWa-cX-rbu" secondAttribute="bottom" id="jRY-Wa-HEm"/>
+                            <constraint firstItem="pOj-VB-u1g" firstAttribute="leading" secondItem="yud-Xv-loN" secondAttribute="leading" id="nYr-qD-qQn"/>
+                            <constraint firstAttribute="trailing" secondItem="pOj-VB-u1g" secondAttribute="trailing" id="o13-oW-JOW"/>
                             <constraint firstAttribute="trailing" secondItem="EWa-cX-rbu" secondAttribute="trailing" id="tO7-7g-YUm"/>
                         </constraints>
                     </view>
@@ -452,7 +479,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbT-c3-fsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="27"/>
+            <point key="canvasLocation" x="1669.5999999999999" y="26.53673163418291"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YA6-MF-Eah">
@@ -466,35 +493,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-Yp-3fO">
-                                <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="n2H-hY-XqQ"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem systemItem="done" id="QOE-Ca-732">
-                                        <connections>
-                                            <action selector="doneBtn:" destination="OqC-Ee-VtQ" id="G15-Fn-kch"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4ah-Pu-eLs">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="YyP-vt-PuN"/>
                                 </constraints>
                                 <color key="progressTintColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sz8-oe-FdL">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8Q-8e-tQ8">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="GvA-oA-Ezf"/>
+                                            <constraint firstAttribute="height" constant="20" id="L6b-B5-2bD"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Dog House Filled-50"/>
+                                        <connections>
+                                            <action selector="homeBtn:" destination="OqC-Ee-VtQ" eventType="touchUpInside" id="cUS-GJ-K54"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="e8Q-8e-tQ8" firstAttribute="leading" secondItem="sz8-oe-FdL" secondAttribute="leading" constant="15" id="3CC-gm-tCQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="e8Q-8e-tQ8" secondAttribute="bottom" constant="8" id="H9l-6G-9q1"/>
+                                    <constraint firstAttribute="height" constant="60" id="pPd-FR-kDY"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="8uJ-Yp-3fO" secondAttribute="trailing" id="4VW-BA-Kbg"/>
+                            <constraint firstItem="sz8-oe-FdL" firstAttribute="top" secondItem="m9e-1L-cow" secondAttribute="top" id="1jr-Kw-Oy2"/>
                             <constraint firstItem="4ah-Pu-eLs" firstAttribute="centerX" secondItem="m9e-1L-cow" secondAttribute="centerX" id="7lq-Ix-hVg"/>
                             <constraint firstItem="4ah-Pu-eLs" firstAttribute="centerY" secondItem="m9e-1L-cow" secondAttribute="centerY" id="O8Z-sF-SFu"/>
-                            <constraint firstItem="8uJ-Yp-3fO" firstAttribute="leading" secondItem="m9e-1L-cow" secondAttribute="leading" id="YP8-9s-ZEY"/>
-                            <constraint firstItem="8uJ-Yp-3fO" firstAttribute="top" secondItem="m9e-1L-cow" secondAttribute="top" id="ahS-8w-onp"/>
+                            <constraint firstAttribute="trailing" secondItem="sz8-oe-FdL" secondAttribute="trailing" id="TnE-oG-cTF"/>
                             <constraint firstItem="4ah-Pu-eLs" firstAttribute="leading" secondItem="m9e-1L-cow" secondAttribute="leadingMargin" constant="20" id="p8i-En-zm0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4ah-Pu-eLs" secondAttribute="trailing" constant="20" id="qs7-VD-rst"/>
+                            <constraint firstItem="sz8-oe-FdL" firstAttribute="leading" secondItem="m9e-1L-cow" secondAttribute="leading" id="yc5-Da-scX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -508,6 +542,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Dog House Filled-50" width="50" height="50"/>
         <image name="Settings Filled-50" width="50" height="50"/>
     </resources>
 </document>

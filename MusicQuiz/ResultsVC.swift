@@ -78,13 +78,13 @@ class ResultsVC: UIViewController {
           yearIndicator.image = UIImage(named: "wrong")
        }
         if movementInput.lowercased() == song.movement_or_act.lowercased() {
-            movementIndicator.image = UIImage(named: "wrong")
+            movementIndicator.image = UIImage(named: "right")
         }
         else if song.movement_or_act.lowercased() == "none" {
             movementIndicator.image = UIImage()
         }
         else{
-            movementIndicator.image = UIImage(named: "right")
+            movementIndicator.image = UIImage(named: "wrong")
         }
 
     }
@@ -93,8 +93,9 @@ class ResultsVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func doneBtn(_ sender: AnyObject) {
-        self.parent?.parent?.dismiss(animated: true, completion: nil)
+    
+    @IBAction func homeBtn(_ sender: AnyObject) {
+    self.parent?.parent?.dismiss(animated: true, completion: nil)
         self.parent?.dismiss(animated: true, completion: nil)
         self.dismiss(animated: true, completion: nil)
     }

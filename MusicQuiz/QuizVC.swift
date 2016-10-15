@@ -8,18 +8,25 @@
 
 import UIKit
 
-class QuizVC: UIViewController {
+class QuizVC: UIViewController, UITextFieldDelegate {
     var song: Song!
 
     @IBOutlet weak var songInput: UITextField!
     @IBOutlet weak var composerInput: UITextField!
     @IBOutlet weak var yearInput: UITextField!
     @IBOutlet weak var movementInput: UITextField!
-    
+    var currentTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        songInput.delegate = self
+        composerInput.delegate = self
+        yearInput.delegate = self
+        movementInput.delegate = self
         
+        
+    }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        currentTextField = textField
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToCheckAnswers" {
@@ -33,11 +40,16 @@ class QuizVC: UIViewController {
             }
         }
     }
-    
-    @IBAction func doneBtn(_ sender: AnyObject) {
+    @IBAction func tapOutsideBox(_ sender: AnyObject) {
+       currentTextField.resignFirstResponder()
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        currentTextField.resignFirstResponder()
+        return true
+    }
+    @IBAction func homeBtn(_ sender: AnyObject) {
         self.parent?.dismiss(animated: true, completion: nil)
         self.dismiss(animated: true, completion: nil)
     }
-
-
+  
 }

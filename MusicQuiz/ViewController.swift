@@ -17,6 +17,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+            return print("error")
+        }
+        do {
             currentSong = getRandomSong()
             let resourceString = currentSong.path
             let resourcePath = Bundle.main.path(forResource: resourceString, ofType: "mp3")!
@@ -32,6 +38,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         musicPlayer.play()
         startTimer()
     }
+    
     // Implement this function that will give a clip of a certain time interval from a song
     /* func playSnippet(length: double) {
         
@@ -49,10 +56,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         songProgress.setProgress(progress, animated: true)
     }
     
-    @IBAction func doneBtn(_ sender: AnyObject) {
+    @IBAction func homeBtn(_ sender: AnyObject) {
+        musicPlayer.stop()
         self.dismiss(animated: true, completion: nil)
     }
-    
     
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
@@ -77,7 +84,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
                 songs.append(Song(path: song, composer: songInfo[0], name: songInfo[1], year: songInfo[2], extra: songInfo[3]))
             }
         }
+        print(songs.count)
         return songs[Int(arc4random_uniform(UInt32(songs.count)))]
+    
     }
         
     func parseSongPath(path:String) -> [String] {
