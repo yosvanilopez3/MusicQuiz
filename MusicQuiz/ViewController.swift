@@ -11,6 +11,7 @@ import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate{
     var musicPlayer: AVAudioPlayer!
     var currentSong: Song!
+    var timer: Timer!
     @IBOutlet weak var songProgress: UIProgressView!
     
     override func viewDidLoad() {
@@ -29,7 +30,23 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         musicPlayer.prepareToPlay()
         musicPlayer.numberOfLoops = 0
         musicPlayer.play()
+        startTimer()
+    }
+    // Implement this function that will give a clip of a certain time interval from a song
+    /* func playSnippet(length: double) {
         
+    } */
+    
+    func startTimer() {
+        if timer != nil {
+            timer.invalidate()
+        }
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.updateProgressBar), userInfo: nil, repeats: true)
+    }
+    
+    func updateProgressBar() {
+        let progress = Float(musicPlayer.currentTime)/Float(musicPlayer.duration)
+        songProgress.setProgress(progress, animated: true)
     }
     
     @IBAction func doneBtn(_ sender: AnyObject) {

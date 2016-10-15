@@ -21,18 +21,24 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrE-nz-8F7">
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="OqC-Ee-VtQ" kind="show" id="RqM-zC-KC6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="rrE-nz-8F7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OyR-Fg-rKO"/>
                             <constraint firstItem="rrE-nz-8F7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jt7-7b-XMv"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="pageCurl" id="3yQ-CJ-cYJ"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,7 +372,7 @@
                                             <constraint firstItem="4LT-KU-bgL" firstAttribute="leading" secondItem="JWe-Ix-ZZb" secondAttribute="leading" constant="20" id="PD2-hC-mpJ"/>
                                             <constraint firstItem="m3u-s3-myw" firstAttribute="leading" secondItem="JWe-Ix-ZZb" secondAttribute="leading" constant="20" id="Pau-o0-G7J"/>
                                             <constraint firstItem="9YO-eC-Y0A" firstAttribute="top" secondItem="m3u-s3-myw" secondAttribute="bottom" constant="30" id="WeZ-WE-ueg"/>
-                                            <constraint firstItem="4LT-KU-bgL" firstAttribute="top" secondItem="9YO-eC-Y0A" secondAttribute="bottom" constant="20" id="ZkS-Oo-uOz"/>
+                                            <constraint firstItem="4LT-KU-bgL" firstAttribute="top" secondItem="9YO-eC-Y0A" secondAttribute="bottom" constant="40" id="ZkS-Oo-uOz"/>
                                             <constraint firstItem="9YO-eC-Y0A" firstAttribute="leading" secondItem="JWe-Ix-ZZb" secondAttribute="leading" constant="20" id="ebB-ST-cjb"/>
                                             <constraint firstAttribute="height" constant="800" id="nCV-4n-erK"/>
                                             <constraint firstItem="m3u-s3-myw" firstAttribute="top" secondItem="JWe-Ix-ZZb" secondAttribute="top" constant="20" id="wzH-t7-eLp"/>
@@ -379,7 +385,7 @@
                                     <constraint firstItem="JWe-Ix-ZZb" firstAttribute="top" secondItem="EWa-cX-rbu" secondAttribute="top" id="mdX-q7-jab"/>
                                     <constraint firstAttribute="trailing" secondItem="JWe-Ix-ZZb" secondAttribute="trailing" id="oKl-a2-CeK"/>
                                     <constraint firstItem="JWe-Ix-ZZb" firstAttribute="leading" secondItem="EWa-cX-rbu" secondAttribute="leading" id="pka-QP-Wh7"/>
-                                    <constraint firstAttribute="bottom" secondItem="JWe-Ix-ZZb" secondAttribute="bottom" id="sLz-NC-YcT"/>
+                                    <constraint firstAttribute="bottom" secondItem="JWe-Ix-ZZb" secondAttribute="bottom" constant="200" id="sLz-NC-YcT"/>
                                 </constraints>
                             </scrollView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPp-kK-gBu">
@@ -440,6 +446,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-Yp-3fO">
+                                <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="n2H-hY-XqQ"/>
                                 </constraints>
@@ -451,10 +458,11 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4ah-Pu-eLs">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4ah-Pu-eLs">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="YyP-vt-PuN"/>
                                 </constraints>
+                                <color key="progressTintColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

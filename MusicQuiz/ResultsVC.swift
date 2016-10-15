@@ -79,7 +79,11 @@ class ResultsVC: UIViewController {
         }
         if movementInput.lowercased() == song.movement_or_act.lowercased()  || song.movement_or_act == "none" {
             movementIndicator.layer.backgroundColor = UIColor(red: 0, green: 128, blue: 0, alpha: 1).cgColor
-        } else {
+        }
+        else if song.movement_or_act.lowercased() == "none" {
+            movementIndicator.layer.backgroundColor = UIColor(red: 128, green: 0, blue: 0, alpha: 0).cgColor
+        }
+        else{
             movementIndicator.layer.backgroundColor = UIColor(red: 128, green: 0, blue: 0, alpha: 1).cgColor
         }
 

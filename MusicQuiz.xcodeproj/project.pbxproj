@@ -129,10 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				281CB50D1DB194E300593545 /* AppDelegate.swift */,
-				281CB55C1DB2125500593545 /* Controller */,
-				281CB5111DB194E300593545 /* Main.storyboard */,
-				281CB5581DB1FDFA00593545 /* RoundedButton.swift */,
 				281CB5411DB1971600593545 /* Song.swift */,
+				281CB55C1DB2125500593545 /* Controller */,
+				281CB55D1DB21BE100593545 /* View */,
 				281CB5171DB194E300593545 /* Assets.xcassets */,
 				281CB5561DB1BD8800593545 /* Songs.xcassets */,
 				281CB5191DB194E300593545 /* LaunchScreen.storyboard */,
@@ -185,6 +184,15 @@
 				281CB50F1DB194E300593545 /* ViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		281CB55D1DB21BE100593545 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				281CB5111DB194E300593545 /* Main.storyboard */,
+				281CB5581DB1FDFA00593545 /* RoundedButton.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
