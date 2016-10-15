@@ -15,6 +15,18 @@
 		281CB51B1DB194E300593545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5191DB194E300593545 /* LaunchScreen.storyboard */; };
 		281CB5261DB194E300593545 /* MusicQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5251DB194E300593545 /* MusicQuizTests.swift */; };
 		281CB5311DB194E300593545 /* MusicQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5301DB194E300593545 /* MusicQuizUITests.swift */; };
+		281CB5401DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB53F1DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 */; };
+		281CB5421DB1971600593545 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5411DB1971600593545 /* Song.swift */; };
+		281CB5441DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */; };
+		281CB54C1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */; };
+		281CB54D1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5461DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 */; };
+		281CB54E1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5471DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 */; };
+		281CB54F1DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5481DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 */; };
+		281CB5501DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5491DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 */; };
+		281CB5511DB1993100593545 /* Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB54A1DB1993100593545 /* Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto.mp3 */; };
+		281CB5521DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB54B1DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 */; };
+		281CB5541DB1A5EA00593545 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5531DB1A5EA00593545 /* QuizVC.swift */; };
+		281CB5571DB1BD8800593545 /* Songs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5561DB1BD8800593545 /* Songs.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,18 @@
 		281CB52C1DB194E300593545 /* MusicQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281CB5301DB194E300593545 /* MusicQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicQuizUITests.swift; sourceTree = "<group>"; };
 		281CB5321DB194E300593545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281CB53F1DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Fur_Alina&Arvo_Part&1976.mp3"; path = "../../../../Downloads/Fur_Alina&Arvo_Part&1976.mp3"; sourceTree = "<group>"; };
+		281CB5411DB1971600593545 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3"; path = "../../../../Downloads/Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3"; sourceTree = "<group>"; };
+		281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3"; path = "../../../../Downloads/Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3"; sourceTree = "<group>"; };
+		281CB5461DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3"; path = "../../../../Downloads/Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3"; sourceTree = "<group>"; };
+		281CB5471DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3"; path = "../../../../Downloads/Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3"; sourceTree = "<group>"; };
+		281CB5481DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3"; path = "../../../../Downloads/Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3"; sourceTree = "<group>"; };
+		281CB5491DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "George_Friedrich_Handel&Messiah&1742&Overture.mp3"; path = "../../../../Downloads/George_Friedrich_Handel&Messiah&1742&Overture.mp3"; sourceTree = "<group>"; };
+		281CB54A1DB1993100593545 /* Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto.mp3"; path = "../../../../Downloads/Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto.mp3"; sourceTree = "<group>"; };
+		281CB54B1DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Carlo_Gesualdo&Moro_lasso&1611.mp3"; path = "../../../../Downloads/Carlo_Gesualdo&Moro_lasso&1611.mp3"; sourceTree = "<group>"; };
+		281CB5531DB1A5EA00593545 /* QuizVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		281CB5561DB1BD8800593545 /* Songs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Songs.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				281CB50C1DB194E300593545 /* MusicQuiz */,
+				281CB53E1DB196DC00593545 /* Songs */,
 				281CB5241DB194E300593545 /* MusicQuizTests */,
 				281CB52F1DB194E300593545 /* MusicQuizUITests */,
 				281CB50B1DB194E300593545 /* Products */,
@@ -101,7 +126,10 @@
 			children = (
 				281CB50D1DB194E300593545 /* AppDelegate.swift */,
 				281CB50F1DB194E300593545 /* ViewController.swift */,
+				281CB5531DB1A5EA00593545 /* QuizVC.swift */,
 				281CB5111DB194E300593545 /* Main.storyboard */,
+				281CB5561DB1BD8800593545 /* Songs.xcassets */,
+				281CB5411DB1971600593545 /* Song.swift */,
 				281CB5171DB194E300593545 /* Assets.xcassets */,
 				281CB5191DB194E300593545 /* LaunchScreen.storyboard */,
 				281CB51C1DB194E300593545 /* Info.plist */,
@@ -126,6 +154,23 @@
 				281CB5321DB194E300593545 /* Info.plist */,
 			);
 			path = MusicQuizUITests;
+			sourceTree = "<group>";
+		};
+		281CB53E1DB196DC00593545 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				281CB53F1DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 */,
+				281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */,
+				281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */,
+				281CB5461DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 */,
+				281CB5471DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 */,
+				281CB5481DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 */,
+				281CB5491DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 */,
+				281CB54A1DB1993100593545 /* Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto.mp3 */,
+				281CB54B1DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 */,
+			);
+			name = Songs;
+			path = MusicQuiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +283,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281CB54E1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 in Resources */,
+				281CB5571DB1BD8800593545 /* Songs.xcassets in Resources */,
 				281CB51B1DB194E300593545 /* LaunchScreen.storyboard in Resources */,
+				281CB5521DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 in Resources */,
+				281CB54D1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 in Resources */,
 				281CB5181DB194E300593545 /* Assets.xcassets in Resources */,
+				281CB5511DB1993100593545 /* Claudio_Monteverdi&L’Orfeo&1607&Act_3_Possente_spirto.mp3 in Resources */,
+				281CB5401DB196EE00593545 /* Fur_Alina&Arvo_Part&1976.mp3 in Resources */,
 				281CB5131DB194E300593545 /* Main.storyboard in Resources */,
+				281CB5501DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 in Resources */,
+				281CB54C1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 in Resources */,
+				281CB54F1DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 in Resources */,
+				281CB5441DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281CB5421DB1971600593545 /* Song.swift in Sources */,
+				281CB5541DB1A5EA00593545 /* QuizVC.swift in Sources */,
 				281CB5101DB194E300593545 /* ViewController.swift in Sources */,
 				281CB50E1DB194E300593545 /* AppDelegate.swift in Sources */,
 				281CB5161DB194E300593545 /* MusicQuiz.xcdatamodeld in Sources */,
