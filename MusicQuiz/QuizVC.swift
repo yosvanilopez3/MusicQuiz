@@ -14,6 +14,7 @@ class QuizVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var composerInput: UITextField!
     @IBOutlet weak var yearInput: UITextField!
     @IBOutlet weak var movementInput: UITextField!
+    
     var currentTextField: UITextField!
     
     override func viewDidLoad() {
@@ -25,6 +26,7 @@ class QuizVC: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
+       
         currentTextField = textField
     }
     

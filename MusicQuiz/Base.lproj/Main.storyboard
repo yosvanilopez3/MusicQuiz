@@ -157,7 +157,7 @@
                                     <constraint firstItem="Ub5-3V-oTV" firstAttribute="leading" secondItem="3vx-zo-V1M" secondAttribute="leading" constant="15" id="mgu-P1-BF3"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMH-Om-jLF">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="800" translatesAutoresizingMaskIntoConstraints="NO" id="cMH-Om-jLF">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAz-9P-daA">
                                         <subviews>
@@ -176,61 +176,74 @@
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rw6-Qi-3bd">
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GJC-oQ-8dw">
+                                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GJC-oQ-8dw">
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFJ-h2-ZX5">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFJ-h2-ZX5">
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                                             </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pct-oN-Nol">
+                                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pct-oN-Nol">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="TVN-hj-O3x"/>
+                                                                </constraints>
                                                                 <nil key="textColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="70c-E1-hwH">
+                                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="70c-E1-hwH">
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Composer:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtX-Cs-eY3">
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                                             </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="246" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vl4-bm-w2P">
+                                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="246" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vl4-bm-w2P">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="P1I-zK-NkB"/>
+                                                                </constraints>
                                                                 <nil key="textColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aMi-G6-yRj">
+                                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aMi-G6-yRj">
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sh-CW-Tfq">
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                                             </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40H-IY-Sk9">
+                                                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40H-IY-Sk9">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="Zzu-a2-6pd"/>
+                                                                </constraints>
                                                                 <nil key="textColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-tq-DKl">
+                                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-tq-DKl">
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement/Act:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-w8-gWp">
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                                             </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yl1-4f-QJb">
+                                                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yl1-4f-QJb">
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="24" id="cb2-Sy-akr"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="Sc7-Yu-44e"/>
                                                                 </constraints>
                                                                 <nil key="textColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
@@ -262,16 +275,15 @@
                                             <constraint firstAttribute="trailing" secondItem="RPd-bb-LR6" secondAttribute="trailing" constant="40" id="NFR-7G-Khb"/>
                                             <constraint firstItem="RPd-bb-LR6" firstAttribute="leading" secondItem="rAz-9P-daA" secondAttribute="leading" constant="40" id="OWM-Vj-iuM"/>
                                             <constraint firstItem="RPd-bb-LR6" firstAttribute="top" secondItem="rAz-9P-daA" secondAttribute="top" constant="15" id="SMG-dW-4tp"/>
-                                            <constraint firstItem="yzB-O6-w3P" firstAttribute="top" secondItem="Rw6-Qi-3bd" secondAttribute="bottom" constant="90" id="U4Y-QS-YhU"/>
+                                            <constraint firstItem="yzB-O6-w3P" firstAttribute="top" secondItem="Rw6-Qi-3bd" secondAttribute="bottom" constant="60" id="U4Y-QS-YhU"/>
                                             <constraint firstItem="Rw6-Qi-3bd" firstAttribute="leading" secondItem="rAz-9P-daA" secondAttribute="leadingMargin" constant="28" id="aPd-Ue-rbd"/>
-                                            <constraint firstAttribute="height" constant="700" id="eoT-X7-qYn"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="rAz-9P-daA" firstAttribute="centerX" secondItem="cMH-Om-jLF" secondAttribute="centerX" id="7ui-di-ONk"/>
                                     <constraint firstItem="rAz-9P-daA" firstAttribute="centerY" secondItem="cMH-Om-jLF" secondAttribute="centerY" id="8ws-Z1-Xtv"/>
-                                    <constraint firstAttribute="bottom" secondItem="rAz-9P-daA" secondAttribute="bottom" constant="200" id="U4p-6G-Jwq"/>
+                                    <constraint firstAttribute="bottom" secondItem="rAz-9P-daA" secondAttribute="bottom" constant="300" id="U4p-6G-Jwq"/>
                                     <constraint firstAttribute="trailing" secondItem="rAz-9P-daA" secondAttribute="trailing" id="dmj-Nj-kfn"/>
                                     <constraint firstItem="rAz-9P-daA" firstAttribute="leading" secondItem="cMH-Om-jLF" secondAttribute="leading" id="egt-Un-q6m"/>
                                     <constraint firstItem="rAz-9P-daA" firstAttribute="top" secondItem="cMH-Om-jLF" secondAttribute="top" id="lZm-fN-McK"/>
@@ -296,7 +308,7 @@
                             <constraint firstAttribute="trailing" secondItem="3vx-zo-V1M" secondAttribute="trailing" id="emL-Ga-WvP"/>
                             <constraint firstItem="ysb-vB-2Dd" firstAttribute="top" secondItem="ehx-ph-7nY" secondAttribute="bottom" id="jmg-eR-dtJ"/>
                             <constraint firstAttribute="trailing" secondItem="cMH-Om-jLF" secondAttribute="trailing" id="k6w-EJ-ogn"/>
-                            <constraint firstItem="ysb-vB-2Dd" firstAttribute="top" secondItem="cMH-Om-jLF" secondAttribute="bottom" id="qrc-yN-8dp"/>
+                            <constraint firstItem="ysb-vB-2Dd" firstAttribute="top" secondItem="cMH-Om-jLF" secondAttribute="bottom" constant="-300" id="qrc-yN-8dp"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="PTx-p2-c3t" appends="YES" id="s6I-k3-kTf"/>
@@ -332,11 +344,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-cX-rbu">
-                                <frame key="frameInset" minY="124" width="375" height="801"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOj-VB-u1g" customClass="ShadowedView" customModule="MusicQuiz" customModuleProvider="target">
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-Ix-ZZb">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1h-SC-2h4">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="A1U-EL-bnx"/>
+                                            <constraint firstAttribute="height" constant="30" id="ccZ-8C-jvH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Dog House Filled-50"/>
+                                        <connections>
+                                            <action selector="homeBtn:" destination="Zvi-xV-qPI" eventType="touchUpInside" id="ql0-Aq-Ddd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="C1h-SC-2h4" firstAttribute="leading" secondItem="pOj-VB-u1g" secondAttribute="leading" constant="15" id="0VL-fE-72E"/>
+                                    <constraint firstAttribute="height" constant="70" id="484-ER-Dxq"/>
+                                    <constraint firstAttribute="bottom" secondItem="C1h-SC-2h4" secondAttribute="bottom" constant="8" id="Uvg-Ks-9Qn"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-cX-rbu">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-Ix-ZZb">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3u-s3-myw">
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
@@ -492,16 +522,10 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mR5-nu-EDA">
-                                                <frame key="frameInset" minX="51" minY="694" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="m3u-s3-myw" secondAttribute="trailing" constant="20" id="01E-fv-hVi"/>
-                                            <constraint firstAttribute="width" constant="375" id="7hq-UV-qWv"/>
                                             <constraint firstAttribute="trailing" secondItem="9YO-eC-Y0A" secondAttribute="trailing" constant="20" id="IT6-1g-4pk"/>
                                             <constraint firstAttribute="trailing" secondItem="4LT-KU-bgL" secondAttribute="trailing" constant="20" id="L5X-Re-842"/>
                                             <constraint firstItem="4LT-KU-bgL" firstAttribute="leading" secondItem="JWe-Ix-ZZb" secondAttribute="leading" constant="20" id="PD2-hC-mpJ"/>
@@ -509,7 +533,6 @@
                                             <constraint firstItem="9YO-eC-Y0A" firstAttribute="top" secondItem="m3u-s3-myw" secondAttribute="bottom" constant="30" id="WeZ-WE-ueg"/>
                                             <constraint firstItem="4LT-KU-bgL" firstAttribute="top" secondItem="9YO-eC-Y0A" secondAttribute="bottom" constant="80" id="ZkS-Oo-uOz"/>
                                             <constraint firstItem="9YO-eC-Y0A" firstAttribute="leading" secondItem="JWe-Ix-ZZb" secondAttribute="leading" constant="20" id="ebB-ST-cjb"/>
-                                            <constraint firstAttribute="height" constant="800" id="nCV-4n-erK"/>
                                             <constraint firstItem="m3u-s3-myw" firstAttribute="top" secondItem="JWe-Ix-ZZb" secondAttribute="top" constant="20" id="wzH-t7-eLp"/>
                                         </constraints>
                                     </view>
@@ -523,26 +546,6 @@
                                     <constraint firstAttribute="bottom" secondItem="JWe-Ix-ZZb" secondAttribute="bottom" constant="300" id="sLz-NC-YcT"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOj-VB-u1g" customClass="ShadowedView" customModule="MusicQuiz" customModuleProvider="target">
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1h-SC-2h4">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="A1U-EL-bnx"/>
-                                            <constraint firstAttribute="height" constant="30" id="ccZ-8C-jvH"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="Dog House Filled-50"/>
-                                        <connections>
-                                            <action selector="homeBtn:" destination="Zvi-xV-qPI" eventType="touchUpInside" id="ql0-Aq-Ddd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="C1h-SC-2h4" firstAttribute="leading" secondItem="pOj-VB-u1g" secondAttribute="leading" constant="15" id="0VL-fE-72E"/>
-                                    <constraint firstAttribute="height" constant="70" id="484-ER-Dxq"/>
-                                    <constraint firstAttribute="bottom" secondItem="C1h-SC-2h4" secondAttribute="bottom" constant="8" id="Uvg-Ks-9Qn"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPW-Lh-fB7" customClass="ShadowedView" customModule="MusicQuiz" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -558,7 +561,7 @@
                             <constraint firstItem="EWa-cX-rbu" firstAttribute="top" secondItem="pOj-VB-u1g" secondAttribute="bottom" id="JmF-N1-3oT"/>
                             <constraint firstAttribute="trailing" secondItem="kPW-Lh-fB7" secondAttribute="trailing" id="Yjd-ZR-C95"/>
                             <constraint firstItem="pOj-VB-u1g" firstAttribute="top" secondItem="yud-Xv-loN" secondAttribute="top" id="hny-cH-2kM"/>
-                            <constraint firstItem="eBM-GB-87m" firstAttribute="top" secondItem="EWa-cX-rbu" secondAttribute="bottom" id="jRY-Wa-HEm"/>
+                            <constraint firstItem="eBM-GB-87m" firstAttribute="top" secondItem="EWa-cX-rbu" secondAttribute="bottom" constant="-300" id="jRY-Wa-HEm"/>
                             <constraint firstItem="pOj-VB-u1g" firstAttribute="leading" secondItem="yud-Xv-loN" secondAttribute="leading" id="nYr-qD-qQn"/>
                             <constraint firstAttribute="trailing" secondItem="pOj-VB-u1g" secondAttribute="trailing" id="o13-oW-JOW"/>
                             <constraint firstAttribute="trailing" secondItem="EWa-cX-rbu" secondAttribute="trailing" id="tO7-7g-YUm"/>

@@ -61,9 +61,6 @@ class ResultsVC: UIViewController {
         movement.text = "Correct Answer: \(song.movement_or_act)"
     }
     
-    private func setupString(s: String) -> String {
-        return s.lowercased().replacingOccurrences(of: " ", with: "")
-    }
     private func checkAnswers() {
         if setupString(s: songInput) == setupString(s:song.name) {
             songIndicator.image = UIImage(named: "right")
@@ -115,4 +112,7 @@ class ResultsVC: UIViewController {
 
     }
 
+    private func setupString(s: String) -> String {
+        return s.lowercased().replacingOccurrences(of: " ", with: "")
+    }
 }
