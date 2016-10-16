@@ -34,7 +34,7 @@ class ResultsVC: UIViewController {
         fillInResponse()
     }
     
-    func fillInResponse() {
+    private func fillInResponse() {
         if let song = songInput, song != "" {
           songNameGuess.text = "Your Answer: \(song)"
         } else {
@@ -61,10 +61,10 @@ class ResultsVC: UIViewController {
         movement.text = "Correct Answer: \(song.movement_or_act)"
     }
     
-    func setupString(s: String) -> String {
+    private func setupString(s: String) -> String {
         return s.lowercased().replacingOccurrences(of: " ", with: "")
     }
-    func checkAnswers() {
+    private func checkAnswers() {
         if setupString(s: songInput) == setupString(s:song.name) {
             songIndicator.image = UIImage(named: "right")
         } else {
@@ -79,11 +79,11 @@ class ResultsVC: UIViewController {
             yearIndicator.image = UIImage(named: "right")
         } else {
           yearIndicator.image = UIImage(named: "wrong")
-       }
+        }
         if setupString(s: movementInput) == setupString(s: song.movement_or_act) {
             movementIndicator.image = UIImage(named: "right")
         }
-        else if setupString(s: song.movement_or_act) == "none" {
+        else if setupString(s: song.movement_or_act) == "N/A" {
             movementIndicator.image = UIImage()
         }
         else{
@@ -91,16 +91,28 @@ class ResultsVC: UIViewController {
         }
 
     }
+    
     @IBAction func playNextSongBtn(_ sender: AnyObject) {
-        self.parent?.dismiss(animated: true, completion: nil)
-        self.dismiss(animated: true, completion: nil)
+        let parentVC = self.presentingViewController
+        // finish finding a smooth transtion to reload music playing VC
+        if let parentOfParentVC = parentVC?.presentingViewController as? MusicPlayerVC {
+            self.dismiss(animated: false, completion: { 
+                parentVC?.dismiss(animated: true, completion: nil)
+                // not sure if this is the correct call to reload the view
+                parentOfParentVC.reloadInputViews()
+            })
+        }
     }
     
-    
     @IBAction func homeBtn(_ sender: AnyObject) {
-    self.parent?.parent?.dismiss(animated: true, completion: nil)
-        self.parent?.dismiss(animated: true, completion: nil)
-        self.dismiss(animated: true, completion: nil)
+        let parentVC = self.presentingViewController
+        let parentOfParentVC = parentVC?.presentingViewController
+        self.dismiss(animated: false) { 
+            parentVC?.dismiss(animated: false, completion: {
+                parentOfParentVC?.dismiss(animated: true, completion: nil)
+            })
+        }
+
     }
 
 }

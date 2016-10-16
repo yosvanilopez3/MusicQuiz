@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 class Song {
     private var _path: String!
     private var _name: String!
@@ -33,7 +32,7 @@ class Song {
         return _movement_or_act
     }
     
-    init(path: String, composer: String, name:String, year: String, extra: String = "none") {
+    init(path: String, composer: String, name:String, year: String, extra: String = "N/A") {
         self._path = path
         self._name = name
         self._composer = composer

@@ -34,6 +34,9 @@
                                     <constraint firstAttribute="width" constant="20" id="cee-Zz-372"/>
                                 </constraints>
                                 <state key="normal" image="Settings Filled-50"/>
+                                <connections>
+                                    <segue destination="vHj-vd-py7" kind="show" id="2jC-TG-X5E"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25282119219999999" green="0.51688941099999997" blue="0.62371787729999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -583,10 +586,10 @@
             </objects>
             <point key="canvasLocation" x="1669.5652173913045" y="26.086956521739133"/>
         </scene>
-        <!--View Controller-->
+        <!--Music PlayerVC-->
         <scene sceneID="YA6-MF-Eah">
             <objects>
-                <viewController id="OqC-Ee-VtQ" customClass="ViewController" customModule="MusicQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OqC-Ee-VtQ" customClass="MusicPlayerVC" customModule="MusicQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mrs-N9-m1x"/>
                         <viewControllerLayoutGuide type="bottom" id="erb-at-l4O"/>

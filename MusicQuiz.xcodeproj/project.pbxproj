@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		281CB50E1DB194E300593545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB50D1DB194E300593545 /* AppDelegate.swift */; };
-		281CB5101DB194E300593545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB50F1DB194E300593545 /* ViewController.swift */; };
 		281CB5131DB194E300593545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5111DB194E300593545 /* Main.storyboard */; };
 		281CB5161DB194E300593545 /* MusicQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5141DB194E300593545 /* MusicQuiz.xcdatamodeld */; };
 		281CB5181DB194E300593545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5171DB194E300593545 /* Assets.xcassets */; };
@@ -30,6 +29,9 @@
 		281CB5591DB1FDFA00593545 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5581DB1FDFA00593545 /* RoundedButton.swift */; };
 		281CB55B1DB207DB00593545 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB55A1DB207DB00593545 /* ResultsVC.swift */; };
 		2838FC2A1DB347D400E81ECD /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC291DB347D400E81ECD /* ShadowedView.swift */; };
+		2838FC2C1DB356D500E81ECD /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2B1DB356D500E81ECD /* SettingsVC.swift */; };
+		2838FC2E1DB356FF00E81ECD /* MusicPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */; };
+		2838FC301DB35B1200E81ECD /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,6 @@
 /* Begin PBXFileReference section */
 		281CB50A1DB194E300593545 /* MusicQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		281CB50D1DB194E300593545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		281CB50F1DB194E300593545 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		281CB5121DB194E300593545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		281CB5151DB194E300593545 /* MusicQuiz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicQuiz.xcdatamodel; sourceTree = "<group>"; };
 		281CB5171DB194E300593545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		281CB5581DB1FDFA00593545 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		281CB55A1DB207DB00593545 /* ResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 		2838FC291DB347D400E81ECD /* ShadowedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
+		2838FC2B1DB356D500E81ECD /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerVC.swift; sourceTree = "<group>"; };
+		2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,9 +185,11 @@
 		281CB55C1DB2125500593545 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2838FC2B1DB356D500E81ECD /* SettingsVC.swift */,
+				2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */,
+				2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */,
 				281CB5531DB1A5EA00593545 /* QuizVC.swift */,
 				281CB55A1DB207DB00593545 /* ResultsVC.swift */,
-				281CB50F1DB194E300593545 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -362,10 +368,12 @@
 				281CB5421DB1971600593545 /* Song.swift in Sources */,
 				281CB5591DB1FDFA00593545 /* RoundedButton.swift in Sources */,
 				281CB5541DB1A5EA00593545 /* QuizVC.swift in Sources */,
-				281CB5101DB194E300593545 /* ViewController.swift in Sources */,
+				2838FC2E1DB356FF00E81ECD /* MusicPlayerVC.swift in Sources */,
 				281CB50E1DB194E300593545 /* AppDelegate.swift in Sources */,
 				281CB5161DB194E300593545 /* MusicQuiz.xcdatamodeld in Sources */,
 				2838FC2A1DB347D400E81ECD /* ShadowedView.swift in Sources */,
+				2838FC2C1DB356D500E81ECD /* SettingsVC.swift in Sources */,
+				2838FC301DB35B1200E81ECD /* StartScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
