@@ -47,11 +47,24 @@ class QuizVC: UIViewController, UITextFieldDelegate {
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         currentTextField.resignFirstResponder()
+        if textField.tag == 1 {
+            currentTextField = composerInput
+            currentTextField.becomeFirstResponder()
+        } else if textField.tag == 2 {
+            currentTextField = yearInput
+            currentTextField.becomeFirstResponder()
+        } else if textField.tag == 3 {
+            currentTextField = movementInput
+            currentTextField.becomeFirstResponder()
+        } else if textField.tag == 4 {
+            performSegue(withIdentifier: "goToCheckAnswers", sender: nil)
+        }
         return true
     }
     @IBAction func homeBtn(_ sender: AnyObject) {
-        self.parent?.dismiss(animated: true, completion: nil)
-        self.dismiss(animated: true, completion: nil)
+        let parentVC = self.presentingViewController
+        self.dismiss(animated: false, completion: nil)
+        parentVC?.dismiss(animated: true, completion: nil)
     }
   
 }

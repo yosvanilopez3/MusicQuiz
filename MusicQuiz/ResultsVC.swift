@@ -61,26 +61,29 @@ class ResultsVC: UIViewController {
         movement.text = "Correct Answer: \(song.movement_or_act)"
     }
     
+    func setupString(s: String) -> String {
+        return s.lowercased().replacingOccurrences(of: " ", with: "")
+    }
     func checkAnswers() {
-        if songInput.lowercased() == song.name.lowercased() {
+        if setupString(s: songInput) == setupString(s:song.name) {
             songIndicator.image = UIImage(named: "right")
         } else {
             songIndicator.image = UIImage(named: "wrong")
         }
-        if composerInput.lowercased() == song.composer.lowercased() {
+        if setupString(s:composerInput) == setupString(s: song.composer) {
             composerIndicator.image = UIImage(named: "right")
         } else {
             composerIndicator.image = UIImage(named: "wrong")
         }
-        if yearInput.lowercased() == song.year.lowercased() {
+        if setupString(s:yearInput) == setupString(s:song.year) {
             yearIndicator.image = UIImage(named: "right")
         } else {
           yearIndicator.image = UIImage(named: "wrong")
        }
-        if movementInput.lowercased() == song.movement_or_act.lowercased() {
+        if setupString(s: movementInput) == setupString(s: song.movement_or_act) {
             movementIndicator.image = UIImage(named: "right")
         }
-        else if song.movement_or_act.lowercased() == "none" {
+        else if setupString(s: song.movement_or_act) == "none" {
             movementIndicator.image = UIImage()
         }
         else{
