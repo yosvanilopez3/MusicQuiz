@@ -41,7 +41,9 @@ class QuizVC: UIViewController, UITextFieldDelegate {
         }
     }
     @IBAction func tapOutsideBox(_ sender: AnyObject) {
+        if (currentTextField) != nil {
        currentTextField.resignFirstResponder()
+        }
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         currentTextField.resignFirstResponder()
