@@ -32,6 +32,8 @@
 		2838FC2C1DB356D500E81ECD /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2B1DB356D500E81ECD /* SettingsVC.swift */; };
 		2838FC2E1DB356FF00E81ECD /* MusicPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */; };
 		2838FC301DB35B1200E81ECD /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */; };
+		28C7254F1DB3ECDB00EBB9F3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7254E1DB3ECDB00EBB9F3 /* Settings.swift */; };
+		28C725B21DBC52ED00EBB9F3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C725B11DBC52ED00EBB9F3 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		2838FC2B1DB356D500E81ECD /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerVC.swift; sourceTree = "<group>"; };
 		2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
+		28C7254E1DB3ECDB00EBB9F3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		28C725B11DBC52ED00EBB9F3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +192,9 @@
 				2838FC2B1DB356D500E81ECD /* SettingsVC.swift */,
 				2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */,
 				2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */,
+				28C725B11DBC52ED00EBB9F3 /* DataService.swift */,
 				281CB5531DB1A5EA00593545 /* QuizVC.swift */,
+				28C7254E1DB3ECDB00EBB9F3 /* Settings.swift */,
 				281CB55A1DB207DB00593545 /* ResultsVC.swift */,
 			);
 			name = Controller;
@@ -367,12 +373,14 @@
 				281CB55B1DB207DB00593545 /* ResultsVC.swift in Sources */,
 				281CB5421DB1971600593545 /* Song.swift in Sources */,
 				281CB5591DB1FDFA00593545 /* RoundedButton.swift in Sources */,
+				28C725B21DBC52ED00EBB9F3 /* DataService.swift in Sources */,
 				281CB5541DB1A5EA00593545 /* QuizVC.swift in Sources */,
 				2838FC2E1DB356FF00E81ECD /* MusicPlayerVC.swift in Sources */,
 				281CB50E1DB194E300593545 /* AppDelegate.swift in Sources */,
 				281CB5161DB194E300593545 /* MusicQuiz.xcdatamodeld in Sources */,
 				2838FC2A1DB347D400E81ECD /* ShadowedView.swift in Sources */,
 				2838FC2C1DB356D500E81ECD /* SettingsVC.swift in Sources */,
+				28C7254F1DB3ECDB00EBB9F3 /* Settings.swift in Sources */,
 				2838FC301DB35B1200E81ECD /* StartScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

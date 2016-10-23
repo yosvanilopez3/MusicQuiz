@@ -179,5 +179,83 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MusicQuiz/MusicPlayerVC.swift"
+            timestampString = "498304101.715676"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "MusicPlayerVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicQuiz.MusicPlayerVC.(timer in _E147FD4DD630B3C40DC5E8B5A3B33D7E).getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.Timer&gt;"
+                  moduleName = "MusicQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yosvanilopez/Desktop/Free%20Time%20Work%20/MusicQuiz/MusicQuiz/MusicPlayerVC.swift"
+                  timestampString = "498304102.881398"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicQuiz.MusicPlayerVC.(timer in _E147FD4DD630B3C40DC5E8B5A3B33D7E).setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.Timer&gt;"
+                  moduleName = "MusicQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yosvanilopez/Desktop/Free%20Time%20Work%20/MusicQuiz/MusicQuiz/MusicPlayerVC.swift"
+                  timestampString = "498304102.88432"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicQuiz.MusicPlayerVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MusicQuiz.MusicPlayerVC"
+                  moduleName = "MusicQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yosvanilopez/Desktop/Free%20Time%20Work%20/MusicQuiz/MusicQuiz/MusicPlayerVC.swift"
+                  timestampString = "498304102.886082"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicQuiz.MusicPlayerVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MusicQuiz.MusicPlayerVC&gt;"
+                  moduleName = "MusicQuiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yosvanilopez/Desktop/Free%20Time%20Work%20/MusicQuiz/MusicQuiz/MusicPlayerVC.swift"
+                  timestampString = "498304102.887808"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

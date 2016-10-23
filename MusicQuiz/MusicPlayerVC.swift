@@ -9,9 +9,21 @@
 import UIKit
 import AVFoundation
 class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
-    var musicPlayer: AVAudioPlayer!
-    var currentSong: Song!
-    var timer: Timer!
+    private var musicPlayer: AVAudioPlayer!
+    private var progressUpdater: Timer!
+    private var currentSong: Song!
+    private var length: Double = 60.0
+    private var playEntireSong: Bool = false
+    private var start: Double!
+    private var end: Double!
+    let songPaths = ["Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1", "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2", "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3", "Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150",
+        "Carlo_Gesualdo&Moro_lasso&1611",
+        "Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto",
+        "Arvo_Part&Fur_Alina&1976",
+        "George_Friedrich_Handel&Messiah&1742&Overture",
+        "Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1"
+    ]
+    
     @IBOutlet weak var songProgress: UIProgressView!
     
     override func viewDidLoad() {
@@ -31,29 +43,65 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
         } catch let err as NSError {
             print(err.debugDescription)
         }
+        // load length and play entire song from dataservice 
+        
+        
         // minimize lag between click and play time
         musicPlayer.delegate = self
-        musicPlayer.prepareToPlay()
-        musicPlayer.numberOfLoops = 0
-        musicPlayer.play()
-        startTimer()
+        playMusic()
+        startUpdater()
     }
     
     // Implement this function that will give a clip of a certain time interval from a song
-    /* func playSnippet(length: double) {
-     
-     } */
+     func playMusic() {
+      setInterval()
+      musicPlayer.currentTime = start
+      musicPlayer.prepareToPlay()
+      musicPlayer.numberOfLoops = 0
+      musicPlayer.play()
+
+     }
     
-    private func startTimer() {
-        if timer != nil {
-            timer.invalidate()
+  // Initial Set up of player
+    func setInterval() {
+        let songLength = musicPlayer.duration
+        if length >= songLength || playEntireSong {
+            start = 0.0
+            end = songLength
         }
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateProgressBar), userInfo: nil, repeats: true)
+        else {
+            let midpoint = getRandomPoint()
+            start = midpoint - length/2.0
+            end = midpoint + length/2.0
+            if start < 0.0 {
+                end = end + Double.abs(start)
+                start = 0.0
+            }
+            else if end > songLength {
+               start = start - (end - songLength)
+               end = songLength
+            }
+        }
+    }
+    
+    func getRandomPoint() -> Double {
+        return Double(arc4random_uniform(UInt32(musicPlayer.duration)))
+    }
+    
+    // song playing handling
+    private func startUpdater() {
+        if progressUpdater != nil {
+            progressUpdater.invalidate()
+        }
+        progressUpdater = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateProgressBar), userInfo: nil, repeats: true)
     }
     
     @objc private func updateProgressBar() {
-        let progress = Float(musicPlayer.currentTime)/Float(musicPlayer.duration)
+        let progress = (Float(musicPlayer.currentTime) - Float(start))/Float(length)
         songProgress.setProgress(progress, animated: true)
+        if songProgress.progress == 1.0 {
+            stopPlaying()
+        }
     }
     
     @IBAction func homeBtn(_ sender: AnyObject) {
@@ -62,7 +110,8 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
     }
     
     
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+    func stopPlaying() {
+        musicPlayer.stop()
         performSegue(withIdentifier: "goToQuiz", sender: nil)
     }
     
@@ -76,8 +125,6 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
     
     private func getRandomSong() -> Song {
         var songs = [Song]()
-        let songPaths = ["Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1", "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2", "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3", "Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150", "Carlo_Gesualdo&Moro_lasso&1611",
-                         "Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto", "Arvo_Part&Fur_Alina&1976", "George_Friedrich_Handel&Messiah&1742&Overture", "Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1"]
         for song in songPaths {
             let songInfo = parseSongPath(path: song)
             if songInfo.count == 4 {

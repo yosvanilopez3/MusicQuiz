@@ -13,7 +13,6 @@ class StartScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-  
     }
 
    

@@ -80,7 +80,7 @@ class ResultsVC: UIViewController {
         if setupString(s: movementInput) == setupString(s: song.movement_or_act) {
             movementIndicator.image = UIImage(named: "right")
         }
-        else if setupString(s: song.movement_or_act) == "N/A" {
+        else if setupString(s: song.movement_or_act) == setupString(s:"N/A") {
             movementIndicator.image = UIImage()
         }
         else{
@@ -95,8 +95,7 @@ class ResultsVC: UIViewController {
         if let parentOfParentVC = parentVC?.presentingViewController as? MusicPlayerVC {
             self.dismiss(animated: false, completion: { 
                 parentVC?.dismiss(animated: true, completion: nil)
-                // not sure if this is the correct call to reload the view
-                parentOfParentVC.reloadInputViews()
+                parentOfParentVC.viewDidLoad()
             })
         }
     }
