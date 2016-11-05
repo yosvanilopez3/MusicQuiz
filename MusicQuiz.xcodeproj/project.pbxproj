@@ -16,24 +16,35 @@
 		281CB5311DB194E300593545 /* MusicQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5301DB194E300593545 /* MusicQuizUITests.swift */; };
 		281CB5401DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB53F1DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 */; };
 		281CB5421DB1971600593545 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5411DB1971600593545 /* Song.swift */; };
-		281CB5441DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */; };
-		281CB54C1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */; };
-		281CB54D1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5461DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 */; };
-		281CB54E1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5471DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 */; };
-		281CB54F1DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5481DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 */; };
-		281CB5501DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5491DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 */; };
-		281CB5511DB1993100593545 /* Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB54A1DB1993100593545 /* Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto.mp3 */; };
+		281CB5441DB1992500593545 /* Bernart_de_Ventadorn_(1135-1194)&Can_Vei_la_Lauzeta_Mover&1150&tempo_rubato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5431DB1992500593545 /* Bernart_de_Ventadorn_(1135-1194)&Can_Vei_la_Lauzeta_Mover&1150&tempo_rubato.mp3 */; };
+		281CB54F1DB1993100593545 /* ohann_Sebastian_Bach_(1685-1750)&Brandenburg_Concertos_5_Movement_1&1721&ritornello_form.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5481DB1993100593545 /* ohann_Sebastian_Bach_(1685-1750)&Brandenburg_Concertos_5_Movement_1&1721&ritornello_form.mp3 */; };
+		281CB5501DB1993100593545 /* George_Friedrich_Handel_(1685-1759)&Messiah_Overture&1742&word_painting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5491DB1993100593545 /* George_Friedrich_Handel_(1685-1759)&Messiah_Overture&1742&word_painting.mp3 */; };
 		281CB5521DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 281CB54B1DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 */; };
 		281CB5541DB1A5EA00593545 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5531DB1A5EA00593545 /* QuizVC.swift */; };
-		281CB5571DB1BD8800593545 /* Songs.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281CB5561DB1BD8800593545 /* Songs.xcassets */; };
 		281CB5591DB1FDFA00593545 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB5581DB1FDFA00593545 /* RoundedButton.swift */; };
 		281CB55B1DB207DB00593545 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB55A1DB207DB00593545 /* ResultsVC.swift */; };
 		2838FC2A1DB347D400E81ECD /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC291DB347D400E81ECD /* ShadowedView.swift */; };
 		2838FC2C1DB356D500E81ECD /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2B1DB356D500E81ECD /* SettingsVC.swift */; };
 		2838FC2E1DB356FF00E81ECD /* MusicPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */; };
 		2838FC301DB35B1200E81ECD /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */; };
+		28A5A1391DC98649001060B1 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5A1381DC98649001060B1 /* MusicPlayer.swift */; };
+		28A5A13B1DC98663001060B1 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5A13A1DC98663001060B1 /* constants.swift */; };
 		28C7254F1DB3ECDB00EBB9F3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7254E1DB3ECDB00EBB9F3 /* Settings.swift */; };
 		28C725B21DBC52ED00EBB9F3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C725B11DBC52ED00EBB9F3 /* DataService.swift */; };
+		28C725BA1DBD725700EBB9F3 /* Antonio_Vivaldi_(1678-1741)&The_Four_Seasons&1723&mimesis_metonymy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725B91DBD725700EBB9F3 /* Antonio_Vivaldi_(1678-1741)&The_Four_Seasons&1723&mimesis_metonymy.mp3 */; };
+		28C725CC1DBD748E00EBB9F3 /* Clara_Schumann_(1819-1896)&Der_Mond_kommt_still_gegangen&1843.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725BB1DBD748E00EBB9F3 /* Clara_Schumann_(1819-1896)&Der_Mond_kommt_still_gegangen&1843.mp3 */; };
+		28C725CD1DBD748E00EBB9F3 /* Claudio_Monteverdi_(1567-1643)&L'Orfeo_Act_1&1607&ritornello_recitative.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725BC1DBD748E00EBB9F3 /* Claudio_Monteverdi_(1567-1643)&L'Orfeo_Act_1&1607&ritornello_recitative.mp3 */; };
+		28C725CE1DBD748E00EBB9F3 /* Franz_Schubert_(1797-1828)&Erlkonig&1815.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725BD1DBD748E00EBB9F3 /* Franz_Schubert_(1797-1828)&Erlkonig&1815.mp3 */; };
+		28C725CF1DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Don_Giovanni_La_ci_darem_la_mano&1787.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725BE1DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Don_Giovanni_La_ci_darem_la_mano&1787.mp3 */; };
+		28C725D01DBD748E00EBB9F3 /* Franz_Joseph_Haydn_(1732-1809)&Surprise_Symphony_94_in_G_Major_movement_2&1791.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725BF1DBD748E00EBB9F3 /* Franz_Joseph_Haydn_(1732-1809)&Surprise_Symphony_94_in_G_Major_movement_2&1791.mp3 */; };
+		28C725D11DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Symphony_40_in_G_Minor_movement_1&1788.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725C01DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Symphony_40_in_G_Minor_movement_1&1788.mp3 */; };
+		28C725D21DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_For_Unto_Us_a_Child_is_Born&1742&word_painting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725C11DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_For_Unto_Us_a_Child_is_Born&1742&word_painting.mp3 */; };
+		28C725D31DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_Comfort_ye_my_people_and_Every_valley_shall_be_exalted&1742&word_painting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725C21DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_Comfort_ye_my_people_and_Every_valley_shall_be_exalted&1742&word_painting.mp3 */; };
+		28C725D81DBD748E00EBB9F3 /* Thomas_Weelkes_(1567-1623)&As_Vesta_was_from_Latmos_hill_descending&1601&word_painting_declamation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725C71DBD748E00EBB9F3 /* Thomas_Weelkes_(1567-1623)&As_Vesta_was_from_Latmos_hill_descending&1601&word_painting_declamation.mp3 */; };
+		28C725D91DBD748E00EBB9F3 /* Giovanni_Pierluigi_da_Palestrina_(1525-1594)&Pope_Marcellus_Mass_Gloria&1557&acappella_homophony.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725C81DBD748E00EBB9F3 /* Giovanni_Pierluigi_da_Palestrina_(1525-1594)&Pope_Marcellus_Mass_Gloria&1557&acappella_homophony.mp3 */; };
+		28C725DA1DBD748E00EBB9F3 /* Josquin_Desprez_(1450-1521)&Pange_lingua_Mass_Kyrie&1510&imitative_polyphony_phrygian_mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725C91DBD748E00EBB9F3 /* Josquin_Desprez_(1450-1521)&Pange_lingua_Mass_Kyrie&1510&imitative_polyphony_phrygian_mode.mp3 */; };
+		28C725DB1DBD748E00EBB9F3 /* Beatriz_Comtessa_de_Dia&A_chantar_m'er&1175&tempo_rubato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725CA1DBD748E00EBB9F3 /* Beatriz_Comtessa_de_Dia&A_chantar_m'er&1175&tempo_rubato.mp3 */; };
+		28C725DC1DBD748E00EBB9F3 /* Hildegard_of_Bingen_(1098-1179)_&Columba_aspexit&&monophony_mixolydian_mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C725CB1DBD748E00EBB9F3 /* Hildegard_of_Bingen_(1098-1179)_&Columba_aspexit&&monophony_mixolydian_mode.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,24 +80,35 @@
 		281CB5321DB194E300593545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		281CB53F1DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Arvo_Part&Fur_Alina&1976.mp3"; path = "../../../../Downloads/Arvo_Part&Fur_Alina&1976.mp3"; sourceTree = "<group>"; };
 		281CB5411DB1971600593545 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3"; path = "../../../../Downloads/Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3"; sourceTree = "<group>"; };
-		281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3"; path = "../../../../Downloads/Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3"; sourceTree = "<group>"; };
-		281CB5461DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3"; path = "../../../../Downloads/Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3"; sourceTree = "<group>"; };
-		281CB5471DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3"; path = "../../../../Downloads/Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3"; sourceTree = "<group>"; };
-		281CB5481DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3"; path = "../../../../Downloads/Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3"; sourceTree = "<group>"; };
-		281CB5491DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "George_Friedrich_Handel&Messiah&1742&Overture.mp3"; path = "../../../../Downloads/George_Friedrich_Handel&Messiah&1742&Overture.mp3"; sourceTree = "<group>"; };
-		281CB54A1DB1993100593545 /* Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto.mp3"; path = "../../../../Downloads/Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto.mp3"; sourceTree = "<group>"; };
+		281CB5431DB1992500593545 /* Bernart_de_Ventadorn_(1135-1194)&Can_Vei_la_Lauzeta_Mover&1150&tempo_rubato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bernart_de_Ventadorn_(1135-1194)&Can_Vei_la_Lauzeta_Mover&1150&tempo_rubato.mp3"; path = "../../../../Downloads/Bernart_de_Ventadorn_(1135-1194)&Can_Vei_la_Lauzeta_Mover&1150&tempo_rubato.mp3"; sourceTree = "<group>"; };
+		281CB5481DB1993100593545 /* ohann_Sebastian_Bach_(1685-1750)&Brandenburg_Concertos_5_Movement_1&1721&ritornello_form.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ohann_Sebastian_Bach_(1685-1750)&Brandenburg_Concertos_5_Movement_1&1721&ritornello_form.mp3"; path = "../../../../Downloads/ohann_Sebastian_Bach_(1685-1750)&Brandenburg_Concertos_5_Movement_1&1721&ritornello_form.mp3"; sourceTree = "<group>"; };
+		281CB5491DB1993100593545 /* George_Friedrich_Handel_(1685-1759)&Messiah_Overture&1742&word_painting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "George_Friedrich_Handel_(1685-1759)&Messiah_Overture&1742&word_painting.mp3"; path = "../../../../Downloads/George_Friedrich_Handel_(1685-1759)&Messiah_Overture&1742&word_painting.mp3"; sourceTree = "<group>"; };
 		281CB54B1DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Carlo_Gesualdo&Moro_lasso&1611.mp3"; path = "../../../../Downloads/Carlo_Gesualdo&Moro_lasso&1611.mp3"; sourceTree = "<group>"; };
 		281CB5531DB1A5EA00593545 /* QuizVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
-		281CB5561DB1BD8800593545 /* Songs.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Songs.xcassets; sourceTree = "<group>"; };
 		281CB5581DB1FDFA00593545 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		281CB55A1DB207DB00593545 /* ResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 		2838FC291DB347D400E81ECD /* ShadowedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
 		2838FC2B1DB356D500E81ECD /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerVC.swift; sourceTree = "<group>"; };
 		2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
+		28A5A1381DC98649001060B1 /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		28A5A13A1DC98663001060B1 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = constants.swift; path = ../constants.swift; sourceTree = "<group>"; };
 		28C7254E1DB3ECDB00EBB9F3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		28C725B11DBC52ED00EBB9F3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		28C725B91DBD725700EBB9F3 /* Antonio_Vivaldi_(1678-1741)&The_Four_Seasons&1723&mimesis_metonymy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Antonio_Vivaldi_(1678-1741)&The_Four_Seasons&1723&mimesis_metonymy.mp3"; path = "../../../../Downloads/Antonio_Vivaldi_(1678-1741)&The_Four_Seasons&1723&mimesis_metonymy.mp3"; sourceTree = "<group>"; };
+		28C725BB1DBD748E00EBB9F3 /* Clara_Schumann_(1819-1896)&Der_Mond_kommt_still_gegangen&1843.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Clara_Schumann_(1819-1896)&Der_Mond_kommt_still_gegangen&1843.mp3"; path = "../../../../Downloads/Clara_Schumann_(1819-1896)&Der_Mond_kommt_still_gegangen&1843.mp3"; sourceTree = "<group>"; };
+		28C725BC1DBD748E00EBB9F3 /* Claudio_Monteverdi_(1567-1643)&L'Orfeo_Act_1&1607&ritornello_recitative.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Claudio_Monteverdi_(1567-1643)&L'Orfeo_Act_1&1607&ritornello_recitative.mp3"; path = "../../../../Downloads/Claudio_Monteverdi_(1567-1643)&L'Orfeo_Act_1&1607&ritornello_recitative.mp3"; sourceTree = "<group>"; };
+		28C725BD1DBD748E00EBB9F3 /* Franz_Schubert_(1797-1828)&Erlkonig&1815.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Franz_Schubert_(1797-1828)&Erlkonig&1815.mp3"; path = "../../../../Downloads/Franz_Schubert_(1797-1828)&Erlkonig&1815.mp3"; sourceTree = "<group>"; };
+		28C725BE1DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Don_Giovanni_La_ci_darem_la_mano&1787.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Wolfgang_Amadeus_Mozart_(1756-1791)&Don_Giovanni_La_ci_darem_la_mano&1787.mp3"; path = "../../../../Downloads/Wolfgang_Amadeus_Mozart_(1756-1791)&Don_Giovanni_La_ci_darem_la_mano&1787.mp3"; sourceTree = "<group>"; };
+		28C725BF1DBD748E00EBB9F3 /* Franz_Joseph_Haydn_(1732-1809)&Surprise_Symphony_94_in_G_Major_movement_2&1791.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Franz_Joseph_Haydn_(1732-1809)&Surprise_Symphony_94_in_G_Major_movement_2&1791.mp3"; path = "../../../../Downloads/Franz_Joseph_Haydn_(1732-1809)&Surprise_Symphony_94_in_G_Major_movement_2&1791.mp3"; sourceTree = "<group>"; };
+		28C725C01DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Symphony_40_in_G_Minor_movement_1&1788.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Wolfgang_Amadeus_Mozart_(1756-1791)&Symphony_40_in_G_Minor_movement_1&1788.mp3"; path = "../../../../Downloads/Wolfgang_Amadeus_Mozart_(1756-1791)&Symphony_40_in_G_Minor_movement_1&1788.mp3"; sourceTree = "<group>"; };
+		28C725C11DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_For_Unto_Us_a_Child_is_Born&1742&word_painting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "George_Friedrich_Handel_(1685-1759)&Messiah_For_Unto_Us_a_Child_is_Born&1742&word_painting.mp3"; path = "../../../../Downloads/George_Friedrich_Handel_(1685-1759)&Messiah_For_Unto_Us_a_Child_is_Born&1742&word_painting.mp3"; sourceTree = "<group>"; };
+		28C725C21DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_Comfort_ye_my_people_and_Every_valley_shall_be_exalted&1742&word_painting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "George_Friedrich_Handel_(1685-1759)&Messiah_Comfort_ye_my_people_and_Every_valley_shall_be_exalted&1742&word_painting.mp3"; path = "../../../../Downloads/George_Friedrich_Handel_(1685-1759)&Messiah_Comfort_ye_my_people_and_Every_valley_shall_be_exalted&1742&word_painting.mp3"; sourceTree = "<group>"; };
+		28C725C71DBD748E00EBB9F3 /* Thomas_Weelkes_(1567-1623)&As_Vesta_was_from_Latmos_hill_descending&1601&word_painting_declamation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Thomas_Weelkes_(1567-1623)&As_Vesta_was_from_Latmos_hill_descending&1601&word_painting_declamation.mp3"; path = "../../../../Downloads/Thomas_Weelkes_(1567-1623)&As_Vesta_was_from_Latmos_hill_descending&1601&word_painting_declamation.mp3"; sourceTree = "<group>"; };
+		28C725C81DBD748E00EBB9F3 /* Giovanni_Pierluigi_da_Palestrina_(1525-1594)&Pope_Marcellus_Mass_Gloria&1557&acappella_homophony.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Giovanni_Pierluigi_da_Palestrina_(1525-1594)&Pope_Marcellus_Mass_Gloria&1557&acappella_homophony.mp3"; path = "../../../../Downloads/Giovanni_Pierluigi_da_Palestrina_(1525-1594)&Pope_Marcellus_Mass_Gloria&1557&acappella_homophony.mp3"; sourceTree = "<group>"; };
+		28C725C91DBD748E00EBB9F3 /* Josquin_Desprez_(1450-1521)&Pange_lingua_Mass_Kyrie&1510&imitative_polyphony_phrygian_mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Josquin_Desprez_(1450-1521)&Pange_lingua_Mass_Kyrie&1510&imitative_polyphony_phrygian_mode.mp3"; path = "../../../../Downloads/Josquin_Desprez_(1450-1521)&Pange_lingua_Mass_Kyrie&1510&imitative_polyphony_phrygian_mode.mp3"; sourceTree = "<group>"; };
+		28C725CA1DBD748E00EBB9F3 /* Beatriz_Comtessa_de_Dia&A_chantar_m'er&1175&tempo_rubato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Beatriz_Comtessa_de_Dia&A_chantar_m'er&1175&tempo_rubato.mp3"; path = "../../../../Downloads/Beatriz_Comtessa_de_Dia&A_chantar_m'er&1175&tempo_rubato.mp3"; sourceTree = "<group>"; };
+		28C725CB1DBD748E00EBB9F3 /* Hildegard_of_Bingen_(1098-1179)_&Columba_aspexit&&monophony_mixolydian_mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Hildegard_of_Bingen_(1098-1179)_&Columba_aspexit&&monophony_mixolydian_mode.mp3"; path = "../../../../Downloads/Hildegard_of_Bingen_(1098-1179)_&Columba_aspexit&&monophony_mixolydian_mode.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +161,11 @@
 			isa = PBXGroup;
 			children = (
 				281CB50D1DB194E300593545 /* AppDelegate.swift */,
+				28A5A13A1DC98663001060B1 /* constants.swift */,
 				281CB55E1DB225D700593545 /* Modal */,
 				281CB55C1DB2125500593545 /* Controller */,
 				281CB55D1DB21BE100593545 /* View */,
 				281CB5171DB194E300593545 /* Assets.xcassets */,
-				281CB5561DB1BD8800593545 /* Songs.xcassets */,
 				281CB5191DB194E300593545 /* LaunchScreen.storyboard */,
 				281CB51C1DB194E300593545 /* Info.plist */,
 				281CB5141DB194E300593545 /* MusicQuiz.xcdatamodeld */,
@@ -173,14 +195,24 @@
 			isa = PBXGroup;
 			children = (
 				281CB53F1DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 */,
-				281CB5431DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 */,
-				281CB5451DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 */,
-				281CB5461DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 */,
-				281CB5471DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 */,
-				281CB5481DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 */,
-				281CB5491DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 */,
-				281CB54A1DB1993100593545 /* Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto.mp3 */,
 				281CB54B1DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 */,
+				281CB5431DB1992500593545 /* Bernart_de_Ventadorn_(1135-1194)&Can_Vei_la_Lauzeta_Mover&1150&tempo_rubato.mp3 */,
+				28C725BB1DBD748E00EBB9F3 /* Clara_Schumann_(1819-1896)&Der_Mond_kommt_still_gegangen&1843.mp3 */,
+				28C725BC1DBD748E00EBB9F3 /* Claudio_Monteverdi_(1567-1643)&L'Orfeo_Act_1&1607&ritornello_recitative.mp3 */,
+				28C725BD1DBD748E00EBB9F3 /* Franz_Schubert_(1797-1828)&Erlkonig&1815.mp3 */,
+				28C725BE1DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Don_Giovanni_La_ci_darem_la_mano&1787.mp3 */,
+				28C725BF1DBD748E00EBB9F3 /* Franz_Joseph_Haydn_(1732-1809)&Surprise_Symphony_94_in_G_Major_movement_2&1791.mp3 */,
+				28C725C01DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Symphony_40_in_G_Minor_movement_1&1788.mp3 */,
+				28C725C11DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_For_Unto_Us_a_Child_is_Born&1742&word_painting.mp3 */,
+				28C725C21DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_Comfort_ye_my_people_and_Every_valley_shall_be_exalted&1742&word_painting.mp3 */,
+				28C725C71DBD748E00EBB9F3 /* Thomas_Weelkes_(1567-1623)&As_Vesta_was_from_Latmos_hill_descending&1601&word_painting_declamation.mp3 */,
+				28C725C81DBD748E00EBB9F3 /* Giovanni_Pierluigi_da_Palestrina_(1525-1594)&Pope_Marcellus_Mass_Gloria&1557&acappella_homophony.mp3 */,
+				28C725C91DBD748E00EBB9F3 /* Josquin_Desprez_(1450-1521)&Pange_lingua_Mass_Kyrie&1510&imitative_polyphony_phrygian_mode.mp3 */,
+				28C725CA1DBD748E00EBB9F3 /* Beatriz_Comtessa_de_Dia&A_chantar_m'er&1175&tempo_rubato.mp3 */,
+				28C725CB1DBD748E00EBB9F3 /* Hildegard_of_Bingen_(1098-1179)_&Columba_aspexit&&monophony_mixolydian_mode.mp3 */,
+				28C725B91DBD725700EBB9F3 /* Antonio_Vivaldi_(1678-1741)&The_Four_Seasons&1723&mimesis_metonymy.mp3 */,
+				281CB5481DB1993100593545 /* ohann_Sebastian_Bach_(1685-1750)&Brandenburg_Concertos_5_Movement_1&1721&ritornello_form.mp3 */,
+				281CB5491DB1993100593545 /* George_Friedrich_Handel_(1685-1759)&Messiah_Overture&1742&word_painting.mp3 */,
 			);
 			name = Songs;
 			path = MusicQuiz;
@@ -214,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				281CB5411DB1971600593545 /* Song.swift */,
+				28A5A1381DC98649001060B1 /* MusicPlayer.swift */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -333,19 +366,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281CB54E1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1.mp3 in Resources */,
-				281CB5571DB1BD8800593545 /* Songs.xcassets in Resources */,
+				28C725CF1DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Don_Giovanni_La_ci_darem_la_mano&1787.mp3 in Resources */,
+				28C725D21DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_For_Unto_Us_a_Child_is_Born&1742&word_painting.mp3 in Resources */,
+				28C725D01DBD748E00EBB9F3 /* Franz_Joseph_Haydn_(1732-1809)&Surprise_Symphony_94_in_G_Major_movement_2&1791.mp3 in Resources */,
+				28C725CD1DBD748E00EBB9F3 /* Claudio_Monteverdi_(1567-1643)&L'Orfeo_Act_1&1607&ritornello_recitative.mp3 in Resources */,
+				28C725DB1DBD748E00EBB9F3 /* Beatriz_Comtessa_de_Dia&A_chantar_m'er&1175&tempo_rubato.mp3 in Resources */,
 				281CB51B1DB194E300593545 /* LaunchScreen.storyboard in Resources */,
 				281CB5521DB1993100593545 /* Carlo_Gesualdo&Moro_lasso&1611.mp3 in Resources */,
-				281CB54D1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2.mp3 in Resources */,
+				28C725D11DBD748E00EBB9F3 /* Wolfgang_Amadeus_Mozart_(1756-1791)&Symphony_40_in_G_Minor_movement_1&1788.mp3 in Resources */,
+				28C725CE1DBD748E00EBB9F3 /* Franz_Schubert_(1797-1828)&Erlkonig&1815.mp3 in Resources */,
+				28C725D31DBD748E00EBB9F3 /* George_Friedrich_Handel_(1685-1759)&Messiah_Comfort_ye_my_people_and_Every_valley_shall_be_exalted&1742&word_painting.mp3 in Resources */,
+				28C725D81DBD748E00EBB9F3 /* Thomas_Weelkes_(1567-1623)&As_Vesta_was_from_Latmos_hill_descending&1601&word_painting_declamation.mp3 in Resources */,
 				281CB5181DB194E300593545 /* Assets.xcassets in Resources */,
-				281CB5511DB1993100593545 /* Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto.mp3 in Resources */,
+				28C725CC1DBD748E00EBB9F3 /* Clara_Schumann_(1819-1896)&Der_Mond_kommt_still_gegangen&1843.mp3 in Resources */,
+				28C725DC1DBD748E00EBB9F3 /* Hildegard_of_Bingen_(1098-1179)_&Columba_aspexit&&monophony_mixolydian_mode.mp3 in Resources */,
 				281CB5401DB196EE00593545 /* Arvo_Part&Fur_Alina&1976.mp3 in Resources */,
 				281CB5131DB194E300593545 /* Main.storyboard in Resources */,
-				281CB5501DB1993100593545 /* George_Friedrich_Handel&Messiah&1742&Overture.mp3 in Resources */,
-				281CB54C1DB1993100593545 /* Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3.mp3 in Resources */,
-				281CB54F1DB1993100593545 /* Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1.mp3 in Resources */,
-				281CB5441DB1992500593545 /* Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150.mp3 in Resources */,
+				28C725DA1DBD748E00EBB9F3 /* Josquin_Desprez_(1450-1521)&Pange_lingua_Mass_Kyrie&1510&imitative_polyphony_phrygian_mode.mp3 in Resources */,
+				28C725BA1DBD725700EBB9F3 /* Antonio_Vivaldi_(1678-1741)&The_Four_Seasons&1723&mimesis_metonymy.mp3 in Resources */,
+				281CB5501DB1993100593545 /* George_Friedrich_Handel_(1685-1759)&Messiah_Overture&1742&word_painting.mp3 in Resources */,
+				281CB54F1DB1993100593545 /* ohann_Sebastian_Bach_(1685-1750)&Brandenburg_Concertos_5_Movement_1&1721&ritornello_form.mp3 in Resources */,
+				28C725D91DBD748E00EBB9F3 /* Giovanni_Pierluigi_da_Palestrina_(1525-1594)&Pope_Marcellus_Mass_Gloria&1557&acappella_homophony.mp3 in Resources */,
+				281CB5441DB1992500593545 /* Bernart_de_Ventadorn_(1135-1194)&Can_Vei_la_Lauzeta_Mover&1150&tempo_rubato.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A5A1391DC98649001060B1 /* MusicPlayer.swift in Sources */,
 				281CB55B1DB207DB00593545 /* ResultsVC.swift in Sources */,
 				281CB5421DB1971600593545 /* Song.swift in Sources */,
+				28A5A13B1DC98663001060B1 /* constants.swift in Sources */,
 				281CB5591DB1FDFA00593545 /* RoundedButton.swift in Sources */,
 				28C725B21DBC52ED00EBB9F3 /* DataService.swift in Sources */,
 				281CB5541DB1A5EA00593545 /* QuizVC.swift in Sources */,

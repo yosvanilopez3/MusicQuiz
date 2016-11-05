@@ -414,19 +414,25 @@
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oXG-mn-qYc">
+                                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oXG-mn-qYc">
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer: " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohn-rR-1cC">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohn-rR-1cC">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer: " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIy-01-25x">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIy-01-25x">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="ohn-rR-1cC" firstAttribute="leading" secondItem="oXG-mn-qYc" secondAttribute="leading" id="CbT-kF-a6E"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="oIy-01-25x" secondAttribute="trailing" id="RIg-Kd-blS"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="ohn-rR-1cC" secondAttribute="trailing" id="ZTY-4I-ggY"/>
+                                                                    <constraint firstItem="oIy-01-25x" firstAttribute="leading" secondItem="oXG-mn-qYc" secondAttribute="leading" id="f9Y-N5-E0S"/>
+                                                                </constraints>
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
@@ -447,19 +453,25 @@
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A7W-QV-jlg">
+                                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A7W-QV-jlg">
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer: " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59k-Wa-gRD">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59k-Wa-gRD">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer: " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4M-Fu-Ivr">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4M-Fu-Ivr">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="F4M-Fu-Ivr" secondAttribute="trailing" id="Ivs-4U-4Gt"/>
+                                                                    <constraint firstItem="F4M-Fu-Ivr" firstAttribute="leading" secondItem="A7W-QV-jlg" secondAttribute="leading" id="Skk-jO-PQ4"/>
+                                                                    <constraint firstItem="59k-Wa-gRD" firstAttribute="leading" secondItem="A7W-QV-jlg" secondAttribute="leading" id="X9h-i6-e7x"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="59k-Wa-gRD" secondAttribute="trailing" id="XQn-j9-utS"/>
+                                                                </constraints>
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
@@ -480,19 +492,25 @@
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XyD-xd-LPC">
+                                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XyD-xd-LPC">
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer: " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udB-8m-n3D">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udB-8m-n3D">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer: " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koF-W9-dtf">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koF-W9-dtf">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="koF-W9-dtf" secondAttribute="trailing" id="B0R-tj-03p"/>
+                                                                    <constraint firstItem="udB-8m-n3D" firstAttribute="leading" secondItem="XyD-xd-LPC" secondAttribute="leading" id="Plz-w2-J0N"/>
+                                                                    <constraint firstItem="koF-W9-dtf" firstAttribute="leading" secondItem="XyD-xd-LPC" secondAttribute="leading" id="nkX-nj-gVn"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="udB-8m-n3D" secondAttribute="trailing" id="ysa-y2-Qkr"/>
+                                                                </constraints>
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
@@ -513,19 +531,25 @@
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2EG-Uk-F7h">
+                                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2EG-Uk-F7h">
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer: " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWi-tG-KOV">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWi-tG-KOV">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer: " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7G-08-LOQ">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7G-08-LOQ">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="J7G-08-LOQ" firstAttribute="leading" secondItem="2EG-Uk-F7h" secondAttribute="leading" id="1hC-7v-aym"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="RWi-tG-KOV" secondAttribute="trailing" id="LKG-bJ-AcZ"/>
+                                                                    <constraint firstItem="RWi-tG-KOV" firstAttribute="leading" secondItem="2EG-Uk-F7h" secondAttribute="leading" id="d98-ec-xMs"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="J7G-08-LOQ" secondAttribute="trailing" id="fY9-cL-b3H"/>
+                                                                </constraints>
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
@@ -565,7 +589,7 @@
                                     <constraint firstItem="JWe-Ix-ZZb" firstAttribute="top" secondItem="EWa-cX-rbu" secondAttribute="top" id="mdX-q7-jab"/>
                                     <constraint firstAttribute="trailing" secondItem="JWe-Ix-ZZb" secondAttribute="trailing" id="oKl-a2-CeK"/>
                                     <constraint firstItem="JWe-Ix-ZZb" firstAttribute="leading" secondItem="EWa-cX-rbu" secondAttribute="leading" id="pka-QP-Wh7"/>
-                                    <constraint firstAttribute="bottom" secondItem="JWe-Ix-ZZb" secondAttribute="bottom" constant="250" id="sLz-NC-YcT"/>
+                                    <constraint firstAttribute="bottom" secondItem="JWe-Ix-ZZb" secondAttribute="bottom" constant="400" id="sLz-NC-YcT"/>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPW-Lh-fB7" customClass="ShadowedView" customModule="MusicQuiz" customModuleProvider="target">
@@ -583,7 +607,7 @@
                             <constraint firstItem="EWa-cX-rbu" firstAttribute="top" secondItem="pOj-VB-u1g" secondAttribute="bottom" id="JmF-N1-3oT"/>
                             <constraint firstAttribute="trailing" secondItem="kPW-Lh-fB7" secondAttribute="trailing" id="Yjd-ZR-C95"/>
                             <constraint firstItem="pOj-VB-u1g" firstAttribute="top" secondItem="yud-Xv-loN" secondAttribute="top" id="hny-cH-2kM"/>
-                            <constraint firstItem="eBM-GB-87m" firstAttribute="top" secondItem="EWa-cX-rbu" secondAttribute="bottom" constant="-250" id="jRY-Wa-HEm"/>
+                            <constraint firstItem="eBM-GB-87m" firstAttribute="top" secondItem="EWa-cX-rbu" secondAttribute="bottom" constant="-400" id="jRY-Wa-HEm"/>
                             <constraint firstItem="pOj-VB-u1g" firstAttribute="leading" secondItem="yud-Xv-loN" secondAttribute="leading" id="nYr-qD-qQn"/>
                             <constraint firstAttribute="trailing" secondItem="pOj-VB-u1g" secondAttribute="trailing" id="o13-oW-JOW"/>
                             <constraint firstAttribute="trailing" secondItem="EWa-cX-rbu" secondAttribute="trailing" id="tO7-7g-YUm"/>

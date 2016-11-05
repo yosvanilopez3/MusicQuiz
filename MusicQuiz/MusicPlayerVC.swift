@@ -9,21 +9,13 @@
 import UIKit
 import AVFoundation
 class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
-    private var musicPlayer: AVAudioPlayer!
+    private var musicPlayer: MusicPlayer!
     private var progressUpdater: Timer!
     private var currentSong: Song!
-    private var length: Double = 60.0
+    private var length: Double = 120.0
     private var playEntireSong: Bool = false
     private var start: Double!
     private var end: Double!
-    let songPaths = ["Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_1", "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_2", "Antonio_Vivaldi&The_Four_Seasons_Autumn&1723&Movement_3", "Bernart_de_Ventadorn&Can_Vei_la_Lauzeta_Mover&1150",
-        "Carlo_Gesualdo&Moro_lasso&1611",
-        "Claudio_Monteverdi&L'Orfeo&1607&Act_3_Possente_spirto",
-        "Arvo_Part&Fur_Alina&1976",
-        "George_Friedrich_Handel&Messiah&1742&Overture",
-        "Johann_Sebastian_Bach&Brandenburg_Concertos_5&1721&Movement_1"
-    ]
-    
     @IBOutlet weak var songProgress: UIProgressView!
     
     override func viewDidLoad() {
@@ -37,55 +29,18 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
         do {
             currentSong = getRandomSong()
             let resourceString = currentSong.path
-            let resourcePath = Bundle.main.path(forResource: resourceString, ofType: "mp3")!
-            let url = URL(fileURLWithPath: resourcePath)
-            try musicPlayer = AVAudioPlayer(contentsOf: url)
+            if let resourcePath = Bundle.main.path(forResource: resourceString, ofType: "mp3") {
+                let url = URL(fileURLWithPath: resourcePath)
+                try musicPlayer = MusicPlayer(contentsOf: url)
+                // minimize lag between click and play time
+                musicPlayer.delegate = self
+                musicPlayer.playMusic()
+                startUpdater()
+            }
         } catch let err as NSError {
             print(err.debugDescription)
         }
-        // load length and play entire song from dataservice 
-        
-        
-        // minimize lag between click and play time
-        musicPlayer.delegate = self
-        playMusic()
-        startUpdater()
-    }
-    
-    // Implement this function that will give a clip of a certain time interval from a song
-     func playMusic() {
-      setInterval()
-      musicPlayer.currentTime = start
-      musicPlayer.prepareToPlay()
-      musicPlayer.numberOfLoops = 0
-      musicPlayer.play()
-
-     }
-    
-  // Initial Set up of player
-    func setInterval() {
-        let songLength = musicPlayer.duration
-        if length >= songLength || playEntireSong {
-            start = 0.0
-            end = songLength
-        }
-        else {
-            let midpoint = getRandomPoint()
-            start = midpoint - length/2.0
-            end = midpoint + length/2.0
-            if start < 0.0 {
-                end = end + Double.abs(start)
-                start = 0.0
-            }
-            else if end > songLength {
-               start = start - (end - songLength)
-               end = songLength
-            }
-        }
-    }
-    
-    func getRandomPoint() -> Double {
-        return Double(arc4random_uniform(UInt32(musicPlayer.duration)))
+        // load length and play entire song from dataservice
     }
     
     // song playing handling
@@ -95,26 +50,33 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
         }
         progressUpdater = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateProgressBar), userInfo: nil, repeats: true)
     }
-    
+    // need to change use of device current time when pause button is implemented
     @objc private func updateProgressBar() {
-        let progress = (Float(musicPlayer.currentTime) - Float(start))/Float(length)
+        let progress = (Float(musicPlayer.currentTime) - Float(start))/(Float(end) - Float(start))
         songProgress.setProgress(progress, animated: true)
-        if songProgress.progress == 1.0 {
-            stopPlaying()
+        // the players current time resets back to 0 whenever the song finishes, it will never be zero otherwise because this function is called 1 second after the music is started. could be possible complication once rewind and foward are implements, possibility is to not allow user to bring back to time = 0 instead only bring back to like time = 1 or something in between, progress needs to be >1 also must be check because otherwise songs continue playing
+        if musicPlayer.currentTime == 0 || progress > 1.0 {
+            endPlaying()
         }
     }
     
     @IBAction func homeBtn(_ sender: AnyObject) {
-        musicPlayer.stop()
+        resetProgress()
         self.dismiss(animated: true, completion: nil)
     }
     
     
-    func stopPlaying() {
-        musicPlayer.stop()
+    func endPlaying() {
+        resetProgress()
+        progressUpdater.invalidate()
         performSegue(withIdentifier: "goToQuiz", sender: nil)
     }
     
+    func resetProgress() {
+        musicPlayer.stop()
+        musicPlayer.currentTime = 0.0
+        songProgress.progress = 0.0
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToQuiz" {
             if let destination = segue.destination as? QuizVC{
