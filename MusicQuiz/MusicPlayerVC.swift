@@ -12,9 +12,10 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
     private var musicPlayer: MusicPlayer!
     private var progressUpdater: Timer!
     private var currentSong: Song!
-    private var length: Double = 180.0
+    private var length: Double = 30.0
     private var playEntireSong: Bool = false
     @IBOutlet weak var songProgress: UIProgressView!
+    private var elapsedTime:Double!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
                 try musicPlayer = MusicPlayer(contentsOf: url)
                 // minimize lag between click and play time
                 musicPlayer.delegate = self
+                elapsedTime = 0;
                 musicPlayer.playMusic(song: resourcePath, interval: length, atTime: musicPlayer.getRandomPoint())
                 startUpdater()
             }
@@ -48,12 +50,13 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
         progressUpdater = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateProgressBar), userInfo: nil, repeats: true)
     }
     
-    // need to change use of device current time when pause button is implemented
+
     @objc private func updateProgressBar() {
-        let progress = (Float(musicPlayer.currentTime) - Float(musicPlayer.start))/(Float(musicPlayer.end) - Float(musicPlayer.start))
+        let totalTime = Double.minimum(length, musicPlayer.duration.binade)
+        let progress = Float(elapsedTime/totalTime)
         songProgress.setProgress(progress, animated: true)
-        // the players current time resets back to 0 whenever the song finishes, it will never be zero otherwise because this function is called 1 second after the music is started. could be possible complication once rewind and foward are implements, possibility is to not allow user to bring back to time = 0 instead only bring back to like time = 1 or something in between, progress needs to be >1 also must be check because otherwise songs continue playing
-        if (progress > 1.0) {
+        elapsedTime = elapsedTime + 1;
+        if (elapsedTime > totalTime) {
             endPlaying()
         }
     }
@@ -72,6 +75,7 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
     
     func resetProgress() {
         musicPlayer.stop()
+        elapsedTime = 0;
         musicPlayer.currentTime = 0.0
         songProgress.progress = 0.0
     }
@@ -93,7 +97,6 @@ class MusicPlayerVC: UIViewController, AVAudioPlayerDelegate{
             }
         }
         return songs[Int(arc4random_uniform(UInt32(songs.count)))]
-        
     }
     
     private func parseSongPath(path:String) -> [String] {

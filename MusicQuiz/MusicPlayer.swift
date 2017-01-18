@@ -10,8 +10,6 @@ import UIKit
 import AVFoundation
 
 class MusicPlayer: AVAudioPlayer {
-    var start: Double = 0.0;
-    var end: Double = 0.0;
     // Implement this function that will give a clip of a certain time interval from a song
     func playMusic(song: String, interval: Double, atTime: Double = Double.nan) {
         setInterval(length: interval)
@@ -20,7 +18,6 @@ class MusicPlayer: AVAudioPlayer {
     
     // plays the entire song
     func playMusic(song: String) {
-        self.
         self.prepareToPlay()
         self.numberOfLoops = 0
         self.play()
@@ -33,6 +30,8 @@ class MusicPlayer: AVAudioPlayer {
     // Initial Set up of player
     func setInterval(length: Double) {
         let songLength = self.duration
+        var start = 0.0;
+        var end = 0.0;
         if length < songLength {
             let midpoint = getRandomPoint()
             start = midpoint - length/2.0

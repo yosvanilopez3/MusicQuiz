@@ -25,7 +25,6 @@
 		282033821E2B7F8300B06A83 /* Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_5&Meno_Moss&.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 282033611E2B7F8300B06A83 /* Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_5&Meno_Moss&.mp3 */; };
 		282033831E2B7F8300B06A83 /* Aaron_Copland_1900-1990&At_The_River&1952&Slowly&.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 282033621E2B7F8300B06A83 /* Aaron_Copland_1900-1990&At_The_River&1952&Slowly&.mp3 */; };
 		282033841E2B7F8300B06A83 /* Adolphe_Adam_1803-1856&Giselle&1841&Act_1&.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 282033631E2B7F8300B06A83 /* Adolphe_Adam_1803-1856&Giselle&1841&Act_1&.mp3 */; };
-		282033851E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 282033641E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 */; };
 		282033861E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_8_Night&.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 282033651E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_8_Night&.mp3 */; };
 		282033871E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_18_Moon_Fleck&.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 282033661E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_18_Moon_Fleck&.mp3 */; };
 		282033881E2B7F8300B06A83 /* Charles_Ives_1874-1954&At_The_River&1922&&.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 282033671E2B7F8300B06A83 /* Charles_Ives_1874-1954&At_The_River&1922&&.mp3 */; };
@@ -55,6 +54,7 @@
 		2838FC2C1DB356D500E81ECD /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2B1DB356D500E81ECD /* SettingsVC.swift */; };
 		2838FC2E1DB356FF00E81ECD /* MusicPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */; };
 		2838FC301DB35B1200E81ECD /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */; };
+		2842FCAF1E2F612700A1B46C /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2842FCAE1E2F612700A1B46C /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 */; };
 		28A5A1391DC98649001060B1 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5A1381DC98649001060B1 /* MusicPlayer.swift */; };
 		28A5A13B1DC98663001060B1 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5A13A1DC98663001060B1 /* constants.swift */; };
 		28C7254F1DB3ECDB00EBB9F3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7254E1DB3ECDB00EBB9F3 /* Settings.swift */; };
@@ -102,7 +102,6 @@
 		282033611E2B7F8300B06A83 /* Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_5&Meno_Moss&.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_5&Meno_Moss&.mp3"; sourceTree = "<group>"; };
 		282033621E2B7F8300B06A83 /* Aaron_Copland_1900-1990&At_The_River&1952&Slowly&.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aaron_Copland_1900-1990&At_The_River&1952&Slowly&.mp3"; sourceTree = "<group>"; };
 		282033631E2B7F8300B06A83 /* Adolphe_Adam_1803-1856&Giselle&1841&Act_1&.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adolphe_Adam_1803-1856&Giselle&1841&Act_1&.mp3"; sourceTree = "<group>"; };
-		282033641E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3"; sourceTree = "<group>"; };
 		282033651E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_8_Night&.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_8_Night&.mp3"; sourceTree = "<group>"; };
 		282033661E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_18_Moon_Fleck&.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_18_Moon_Fleck&.mp3"; sourceTree = "<group>"; };
 		282033671E2B7F8300B06A83 /* Charles_Ives_1874-1954&At_The_River&1922&&.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Charles_Ives_1874-1954&At_The_River&1922&&.mp3"; sourceTree = "<group>"; };
@@ -132,6 +131,7 @@
 		2838FC2B1DB356D500E81ECD /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		2838FC2D1DB356FF00E81ECD /* MusicPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerVC.swift; sourceTree = "<group>"; };
 		2838FC2F1DB35B1200E81ECD /* StartScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
+		2842FCAE1E2F612700A1B46C /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3"; sourceTree = "<group>"; };
 		28A5A1381DC98649001060B1 /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		28A5A13A1DC98663001060B1 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = constants.swift; path = ../constants.swift; sourceTree = "<group>"; };
 		28C7254E1DB3ECDB00EBB9F3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -227,8 +227,8 @@
 				282033611E2B7F8300B06A83 /* Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_5&Meno_Moss&.mp3 */,
 				282033621E2B7F8300B06A83 /* Aaron_Copland_1900-1990&At_The_River&1952&Slowly&.mp3 */,
 				282033631E2B7F8300B06A83 /* Adolphe_Adam_1803-1856&Giselle&1841&Act_1&.mp3 */,
-				282033641E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 */,
 				282033651E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_8_Night&.mp3 */,
+				2842FCAE1E2F612700A1B46C /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 */,
 				282033661E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_18_Moon_Fleck&.mp3 */,
 				282033671E2B7F8300B06A83 /* Charles_Ives_1874-1954&At_The_River&1922&&.mp3 */,
 				282033681E2B7F8300B06A83 /* Charles_Ives_1874-1954&The_Unanswered_Question&1906&&.mp3 */,
@@ -420,6 +420,7 @@
 				282033921E2B7F8300B06A83 /* John_Adams_b_1947&Docter_Atomic&2005&Batter_My_Heart&.mp3 in Resources */,
 				282033861E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Pierrot_Lunaire&1912&Number_8_Night&.mp3 in Resources */,
 				2820337F1E2B7F8300B06A83 /* Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_2_Allegro&.mp3 in Resources */,
+				2842FCAF1E2F612700A1B46C /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 in Resources */,
 				2820339D1E2B7F8300B06A83 /* Steve_Reich_b_1936&Music_For_18_Musicians&1976&Introduction_Pulse&.mp3 in Resources */,
 				282033821E2B7F8300B06A83 /* Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_5&Meno_Moss&.mp3 in Resources */,
 				2820339C1E2B7F8300B06A83 /* Sippie_Wallace_1898-1986&If_You_Ever_Been_Down_Blues&1927&&.mp3 in Resources */,
@@ -429,7 +430,6 @@
 				281CB5181DB194E300593545 /* Assets.xcassets in Resources */,
 				281CB5131DB194E300593545 /* Main.storyboard in Resources */,
 				2820338A1E2B7F8300B06A83 /* Charlie_Parker_1920-1955&Out_Of_Nowhere&1948&&.mp3 in Resources */,
-				282033851E2B7F8300B06A83 /* Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&.mp3 in Resources */,
 				282033841E2B7F8300B06A83 /* Adolphe_Adam_1803-1856&Giselle&1841&Act_1&.mp3 in Resources */,
 				2820338E1E2B7F8300B06A83 /* Giuseppe_Verdi_(1813-1901)&La_Traviata&1852&Act_1_Brindisi&.mp3 in Resources */,
 				282033881E2B7F8300B06A83 /* Charles_Ives_1874-1954&At_The_River&1922&&.mp3 in Resources */,

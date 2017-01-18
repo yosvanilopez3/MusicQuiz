@@ -34,7 +34,7 @@ let songPaths = ["Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_1&", "
     "Ludwig_Van_Beethoven_1770-1827&Symphony_Number_9&1824&Movement_4&",
     "Phillip_Glass_b_1937&Glassworks&1982&Opening&",
     "Scott_Joplin_1868-1917&Solace_Mexican_Serenade&1909&&",
-    "Sergei_Prokofiev_1898-1937&Alexander_Nevsky&1938&Battle_on_Ice&",
+    "Sergei_Prokofiev_1898-1957&Alexander_Nevsky&1938&Battle_on_Ice&",
     "Sippie_Wallace_1898-1986&If_You_Ever_Been_Down_Blues&1927&&",
     "Steve_Reich_b_1936&Music_For_18_Musicians&1976&Introduction_Pulse&",
     "Steve_Reich_b_1936&Music_For_18_Musicians&1976&Section_1&"]
