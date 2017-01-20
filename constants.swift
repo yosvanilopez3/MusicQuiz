@@ -8,8 +8,7 @@
 
 import Foundation
 
-let songPaths = ["Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_1&", "Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_2_Allegro&", "Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_3&Moderato&", "Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_4&Molto_Moderato&",
-    "Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_5&Meno_Moss&",
+let songPaths = ["Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_1&", 
     "Aaron_Copland_1900-1990&At_The_River&1952&Slowly&",
     "Adolphe_Adam_1803-1856&Giselle&1841&Act_1&",
     "Arnold_Schoenberg_1874-1951&Five_Piece_Orchestra&1911&Movement_3_Farben&",
@@ -22,8 +21,6 @@ let songPaths = ["Aaron_Copland_1900-1990&Appalachian_Spring&1952&Section_1&", "
     "Duke_Ellington_1899-1974&Conga_Brava&1940&&",
     "George_Gershwin_1898-1937&Rhapsody_In_Blue&1924&&",
     "Giuseppe_Verdi_(1813-1901)&La_Traviata&1852&Act_1_Brindisi&",
-    "Giuseppe_Verdi_(1813-1901)&La_Traviata&1852&Act_1_Parigi_O_Cara&",
-    "Giuseppe_Verdi_(1813-1901)&La_Traviata&1852&Act_1_Sempre_Libera&",
     "Igor_Stavinsky_1882-1971&The_Rite_Of_Spring&1913&Part_1&",
     "John_Adams_b_1947&Docter_Atomic&2005&Batter_My_Heart&",
     "John_Cage_1912-1992&4_33&1952&&",
